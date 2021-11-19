@@ -5,9 +5,9 @@
  
  Abstractions include:
  - cycle : phrase looper
- - periodic : stepped simple harmonic motions
- - rand : linea, gaussian and random walk
- - quant : pitch class quanitse
+ - periodic : stepped simple harmonic motion
+ - rand : linear, gaussian and random walk
+ - quant : pitch class quanitze
  - midi : MIDI note output
  - synth : simple mono subtractive synth
  - drums : simple synthesized drum kit

@@ -15,3 +15,5 @@
  - out : stereo audio output with reverb
 
 Help files and examples are included.
+
+Functions based on live coding techniques outlined in Sorensen, A., Brown, A.R.: aa-cell in practice: an approach to musical live coding. In: Proceedings of the International Computer Music Conference. pp. 292–299. ICMA, Copenhagen (2007).

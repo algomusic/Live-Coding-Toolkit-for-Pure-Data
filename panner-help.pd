@@ -1,0 +1,15 @@
+#N canvas 892 655 272 273 12;
+#X obj 37 19 osc~ 220;
+#X floatatom 83 60 5 0 1 2 Pan_position_(0.0_-_1.0) - -;
+#X floatatom 86 184 5 0 1 2 Volume_(0.0_-_1.0) - -;
+#X obj 37 88 panner;
+#X obj 37 218 out, f 5;
+#X obj 86 117 loadbang;
+#X msg 86 139 0.5;
+#X connect 0 0 3 0;
+#X connect 1 0 3 1;
+#X connect 2 0 4 2;
+#X connect 3 0 4 0;
+#X connect 3 1 4 1;
+#X connect 5 0 6 0;
+#X connect 6 0 2 0;

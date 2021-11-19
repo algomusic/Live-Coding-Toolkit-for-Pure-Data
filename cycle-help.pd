@@ -1,0 +1,30 @@
+#N canvas 553 542 270 244 12;
+#X obj 48 38 metro 0.25 120 permin;
+#X obj 48 13 tgl 15 0 empty empty Start 17 7 0 10 -262144 -1 -1 1 1
+;
+#X floatatom 47 162 5 0 0 0 - - -;
+#X obj 21 163 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 47 131 cycle 60 100 4, f 16;
+#X floatatom 156 163 5 0 0 0 - - -;
+#X obj 156 102 bng 15 250 50 0 empty empty Reset 17 7 0 10 -262144
+-1 -1;
+#X floatatom 101 163 5 0 0 0 - - -;
+#X msg 68 101 60 64;
+#X msg 91 70 100 80 40;
+#X text 46 190 Pitch;
+#X text 102 191 Vel;
+#X text 156 191 Dur;
+#X msg 117 101 8 2;
+#X floatatom 181 75 0 0 0 2 Transpose - -;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 4 0 2 0;
+#X connect 4 0 3 0;
+#X connect 4 1 7 0;
+#X connect 4 2 5 0;
+#X connect 6 0 4 5;
+#X connect 8 0 4 1;
+#X connect 9 0 4 2;
+#X connect 13 0 4 3;
+#X connect 14 0 4 4;

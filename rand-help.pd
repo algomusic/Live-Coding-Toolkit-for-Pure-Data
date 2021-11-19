@@ -1,0 +1,44 @@
+#N canvas 1147 254 604 179 12;
+#X obj 55 76 rand;
+#X obj 57 47 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 55 108 5 0 0 0 - - -;
+#X obj 30 110 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 142 48 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 140 109 5 0 0 0 - - -;
+#X obj 115 111 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 246 45 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 274 110 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 305 105 5 0 0 0 - - -;
+#X text 49 16 Null;
+#X text 129 18 Linear;
+#X text 230 18 Gaussian;
+#X text 360 21 Walk;
+#X obj 366 49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 438 114 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 466 111 5 0 0 0 - - -;
+#X obj 364 78 rand 60 4 20 90;
+#X obj 244 74 rand 60 3;
+#X obj 140 77 rand 5 10;
+#X text 168 55 Min-Max;
+#X text 279 52 Mean-Dev;
+#X text 396 55 Start-Dev-Min-Max;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 4 0 19 0;
+#X connect 7 0 18 0;
+#X connect 14 0 17 0;
+#X connect 17 2 16 0;
+#X connect 17 2 15 0;
+#X connect 18 1 9 0;
+#X connect 18 1 8 0;
+#X connect 19 0 5 0;
+#X connect 19 0 6 0;

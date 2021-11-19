@@ -16,4 +16,4 @@
 
 Help files and examples are included.
 
-Functions based on live coding techniques outlined in Sorensen, and A., Brown, A.R. (2007) aa-cell in practice: an approach to musical live coding. In: Proceedings of the International Computer Music Conference. pp. 292–299. ICMA, Copenhagen.
+Functions based on live coding techniques outlined in Sorensen, Andrew and Brown, Andrew R. (2007) aa-cell in practice: An approach to musical live coding. In: Proceedings of the International Computer Music Conference. pp. 292–299. ICMA, Copenhagen.

@@ -5,9 +5,9 @@
  
  Abstractions include:
  - cycle : phrase looper
- - periodic : stepped simple harmonic motions
- - rand : linea, gaussian and random walk
- - quant : pitch class quanitse
+ - periodic : stepped simple harmonic motion
+ - rand : linear, gaussian and random walk
+ - quant : pitch class quanitze
  - midi : MIDI note output
  - synth : simple mono subtractive synth
  - drums : simple synthesized drum kit
@@ -15,3 +15,5 @@
  - out : stereo audio output with reverb
 
 Help files and examples are included.
+
+Functions are based on live coding techniques outlined in Sorensen, Andrew & Brown, Andrew R. (2007) aa-cell in practice: An approach to musical live coding. In: Proceedings of the International Computer Music Conference. pp. 292–299. ICMA, Copenhagen.

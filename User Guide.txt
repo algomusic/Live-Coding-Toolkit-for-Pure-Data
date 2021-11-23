@@ -1,0 +1,52 @@
+Live Coding Toolkit for Pure Data - User Guide
+
+A suite of Pure Data abstractions (predefined functions) for musical live coding
+
+By Andrew R. Brown, 2021
+
+Abstractions:
+
+cycle : phrase looper
+- arguments (pitch, velocity, duration, delay, transpose)
+- inlets [trigger bangs, pitch list, velocity list, duration list, delay in ms, transpose in semitones]
+- outlets [next pitch, next velocity, next duration, beat count]
+
+periodic : stepped simple harmonic motion
+- arguments (step, numb of steps, centre, range)
+- inlets [numb of steps, centre, range]
+- outlet [next value]
+
+rand : linear, gaussian and random walk
+- arguments (value 1, value 2, upper limit, lower limit)
+- inlets (trigger bang, value 1, value 2, upper limit, lower limit)
+- outlets (linear, val 1 = min, val 2 = max), (gaussian, val 1 = mean, val 2 = deviation), (walk, val 1 = start val, val 2 = step size, upper limit, lower limit)
+
+quant : pitch class quanitze
+- arguments (list of up to 11 MIDI pitch numbers ranged from 0-11)
+- inlets [MIDI pitch to quantize, pitch class list]
+- outlet [quantised MIDI pitch]
+
+midi : MIDI note output
+- arguments (MIDI pitch, MIDI velocity, duration in ms, MIDI channel from 1 to 16)
+- inlets [MIDI pitch, MIDI velocity, duration in ms, MIDI channel from 1 to 16]
+- outlets [none]
+
+synth : simple mono subtractive synth
+- arguments (filter cutoff, attack in ms, release in ms)
+- inlets [MIDI pitch, MIDI velocity, filter cutoff, attack in ms, release in ms]
+- outlet [mono audio signal]
+
+drums : simple synthesized drum kit
+- arguments (none)
+- inlets [kick trigger, snare trigger, hats trigger, kick velocity from 0 - 127, snare velocity, hats velocity]
+- outlet [mono audio signal]
+
+panner : stereo audio panner
+- arguments (none)
+- inlets [audio signal, pan position from 0.0 - 1.0]
+- outlets [audio out left, audio out right]
+
+out : stereo audio output with reverb
+- arguments (none)
+- inlets (audio input left, audio input right, volume level from 0.0 to 1.0, reverb amount from 0 tp 100)
+- outlets [none]

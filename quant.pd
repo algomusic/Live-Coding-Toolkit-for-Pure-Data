@@ -1,5 +1,5 @@
-#N canvas 497 379 469 366 10;
-#X obj 18 48 inlet pitch;
+#N canvas 1662 373 469 366 10;
+#X obj 18 36 inlet pitch;
 #X obj 127 48 inlet scale;
 #X obj 59 317 outlet;
 #N canvas 1015 408 474 460 list-contains 0;
@@ -31,7 +31,7 @@
 #X text 19 4 Compare number to those in a list - return boolean result
 ;
 #X text 213 419 Andrew R. Brown - byron bay \, 2017;
-#X msg 228 204 0 2 3 7 9 0 0 0 0 0 0 0;
+#X msg 228 204 0 7 0 0 0 0 0 0 0 0 0 0;
 #X connect 0 0 22 0;
 #X connect 1 0 4 0;
 #X connect 1 0 6 0;
@@ -81,7 +81,7 @@
 #N canvas 447 145 413 622 list-modulo 0;
 #X obj 195 11 inlet list;
 #X obj 228 97 list trim;
-#X msg 229 196 0 2 3 7 9 0 0 0 0 0 0 0;
+#X msg 229 196 0 7 0 0 0 0 0 0 0 0 0 0;
 #X obj 228 71 list prepend set;
 #X text 230 217 List;
 #X obj 121 71 list length;
@@ -99,7 +99,7 @@
 #X obj 196 34 t b l;
 #X obj 95 364 list trim;
 #X obj 95 337 list prepend set;
-#X msg 95 434 0 2 3 7 9 0 0 0 0 0 0 0;
+#X msg 95 434 0 7 0 0 0 0 0 0 0 0 0 0;
 #X obj 205 241 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 168 279 bang;
@@ -161,7 +161,7 @@
 #X connect 33 0 18 0;
 #X connect 34 0 30 0;
 #X restore 127 104 pd list-modulo;
-#X msg 127 174 0 2 3 7 9 0 0 0 0 0 0 0;
+#X msg 127 174 0 7 0 0 0 0 0 0 0 0 0 0;
 #X msg 157 77 60 62 64 65 67;
 #X obj 127 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -182,10 +182,11 @@
 #X text 11 342 Andrew R. Brown \, byron bay \, 2017 \, updated 2021
 ;
 #X obj 272 211 pack 0 0 0 0 0 0 0 0 0 0 0 0;
-#X msg 259 289 0 2 3 7 9 0 0 0 0 0 0 0;
+#X msg 259 289 0 7 0 0 0 0 0 0 0 0 0 0;
 #X msg 177 244 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
 ;
-#X connect 0 0 4 0;
+#X obj 18 60 int;
+#X connect 0 0 38 0;
 #X connect 1 0 16 0;
 #X connect 3 0 5 0;
 #X connect 4 0 9 0;
@@ -235,3 +236,4 @@
 #X connect 35 0 37 0;
 #X connect 36 0 16 0;
 #X connect 37 0 36 0;
+#X connect 38 0 4 0;

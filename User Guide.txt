@@ -17,9 +17,9 @@ periodic : stepped simple harmonic motion
 - outlet [next value]
 
 rand : linear, gaussian and random walk
-- arguments (value 1, value 2, upper limit, lower limit)
-- inlets (trigger bang, value 1, value 2, upper limit, lower limit)
-- outlets (linear, val 1 = min, val 2 = max), (gaussian, val 1 = mean, val 2 = deviation), (walk, val 1 = start val, val 2 = step size, upper limit, lower limit)
+- arguments (centre, deviation, upper limit, lower limit)
+- inlets [trigger bang, value 1, value 2, upper limit, lower limit]
+- outlets [linear distribution, gaussian distribution, random walk (centre = start, deviation = step size, upper limit, lower limit)]
 
 quant : pitch class quanitze
 - arguments (list of up to 11 MIDI pitch numbers ranged from 0-11)

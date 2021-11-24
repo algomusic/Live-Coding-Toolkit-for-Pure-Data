@@ -1,4 +1,4 @@
-#N canvas 1120 381 1050 630 12;
+#N canvas 1211 437 1050 630 12;
 #X obj 65 570 outlet;
 #X obj 121 572 outlet;
 #X text 64 597 pitch;
@@ -50,14 +50,14 @@
 #X floatatom 339 80 5 0 0 0 - - -;
 #X floatatom 388 79 5 0 0 0 - - -;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array \$0-pitches 4 float 2;
-#X coords 0 127 4 0 100 64 1 0 0;
+#X array \$0-pitches 1 float 2;
+#X coords 0 127 1 0 100 64 1 0 0;
 #X restore 438 401 graph;
 #X obj 434 242 array set \$0-velocities;
 #X obj 265 243 array set \$0-pitches;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array \$0-durations 6 float 2;
-#X coords 0 16 6 0 100 64 1 0 0;
+#X array \$0-durations 1 float 2;
+#X coords 0 16 1 0 100 64 1 0 0;
 #X restore 729 394 graph;
 #X text 571 22 duration list;
 #X obj 642 57 inlet;

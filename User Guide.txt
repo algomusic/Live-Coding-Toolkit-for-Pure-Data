@@ -8,8 +8,8 @@ Abstractions:
 
 cycle : phrase looper
 - arguments (pitch, velocity, duration, delay, transpose)
-- inlets [trigger bangs, pitch list, velocity list, duration list, delay in ms, transpose in semitones]
-- outlets [next pitch, next velocity, next duration, beat count]
+- inlets [trigger bangs, pitch list, velocity list, duration list, delay in ms, transpose in semitones, restart count]
+- outlets [next pitch, next velocity, next duration, beat count, pulse count]
 
 periodic : stepped simple harmonic motion
 - arguments (step, numb of steps, centre, range)

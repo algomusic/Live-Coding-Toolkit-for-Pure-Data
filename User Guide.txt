@@ -36,6 +36,11 @@ synth : simple mono subtractive synth
 - inlets [MIDI pitch, MIDI velocity, filter cutoff, attack in ms, release in ms]
 - outlet [mono audio signal]
 
+fm : simple 2-operator frequency modulation synth
+- arguments (mod depth, mod index, attack in ms, release in ms)
+- inlets [MIDI pitch, MIDI velocity, modulation depth, modulation index, attack in ms, release in ms]
+- outlet [mono audio signal]
+
 drums : simple synthesized drum kit
 - arguments (none)
 - inlets [kick trigger, snare trigger, hats trigger, kick velocity from 0 - 127, snare velocity, hats velocity]

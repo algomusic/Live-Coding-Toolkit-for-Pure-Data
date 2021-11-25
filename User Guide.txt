@@ -12,8 +12,13 @@ cycle : phrase looper
 - outlets [next pitch, next velocity, next duration, beat count, pulse count]
 
 periodic : stepped simple harmonic motion
-- arguments (step, numb of steps, centre, range)
-- inlets [numb of steps, centre, range]
+- arguments (numb of steps, centre value, range)
+- inlets [step, numb of steps, centre value, range]
+- outlet [next value]
+
+ramp : stepped transition between two values
+- arguments (numb of steps, start value, end value, curve)
+- inlets [step, numb of steps, start value, end value, curve, reset]
 - outlet [next value]
 
 rand : linear, gaussian and random walk

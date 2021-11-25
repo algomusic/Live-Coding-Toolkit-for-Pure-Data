@@ -1,11 +1,12 @@
 # Live Coding Toolkit for Pure Data
  A suite of Pure Data abstractions (predefined functions) for musical live coding
- 
+
  Download and add the folder to your Paths in Pure Data's preferences.
- 
+
  Abstractions include:
  - cycle : phrase looper
  - periodic : stepped simple harmonic motion
+ - ramp : stepped transition between two values
  - rand : linear, gaussian and random walk
  - quant : pitch class quanitze
  - midi : MIDI note output

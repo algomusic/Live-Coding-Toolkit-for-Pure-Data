@@ -4,8 +4,8 @@
 #X text 64 597 pitch;
 #X text 116 597 velocity;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array \$0-velocities 2 float 2;
-#X coords 0 127 2 0 100 64 1 0 0;
+#X array \$0-velocities 1 float 2;
+#X coords 0 127 1 0 100 64 1 0 0;
 #X restore 566 397 graph;
 #X obj 57 20 inlet;
 #X obj 265 48 inlet;
@@ -50,14 +50,14 @@
 #X floatatom 339 80 5 0 0 0 - - -;
 #X floatatom 388 79 5 0 0 0 - - -;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array \$0-pitches 1 float 2;
-#X coords 0 127 1 0 100 64 1 0 0;
+#X array \$0-pitches 3 float 2;
+#X coords 0 127 3 0 100 64 1 0 0;
 #X restore 438 401 graph;
 #X obj 434 242 array set \$0-velocities;
 #X obj 265 243 array set \$0-pitches;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array \$0-durations 1 float 2;
-#X coords 0 16 1 0 100 64 1 0 0;
+#X array \$0-durations 3 float 2;
+#X coords 0 16 3 0 100 64 1 0 0;
 #X restore 729 394 graph;
 #X text 571 22 duration list;
 #X obj 642 57 inlet;
@@ -104,6 +104,11 @@
 #X obj 142 45 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 57 46 pipe 0;
+#X obj 362 572 outlet;
+#X text 359 604 pulse cnt;
+#X obj 362 536 f;
+#X obj 396 536 + 1;
+#X msg 380 506 0;
 #X connect 5 0 92 0;
 #X connect 6 0 15 0;
 #X connect 7 0 19 0;
@@ -133,6 +138,7 @@
 #X connect 28 0 92 1;
 #X connect 30 0 84 0;
 #X connect 31 0 80 0;
+#X connect 31 0 95 0;
 #X connect 32 0 9 0;
 #X connect 33 0 34 0;
 #X connect 34 0 36 0;
@@ -187,4 +193,9 @@
 #X connect 89 0 80 1;
 #X connect 90 0 91 0;
 #X connect 91 0 89 0;
+#X connect 91 0 97 0;
 #X connect 92 0 31 0;
+#X connect 95 0 96 0;
+#X connect 95 0 93 0;
+#X connect 96 0 95 1;
+#X connect 97 0 95 1;

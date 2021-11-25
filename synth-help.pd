@@ -1,4 +1,4 @@
-#N canvas 1085 888 327 316 12;
+#N canvas 1807 846 416 316 12;
 #X obj 46 237 synth 500;
 #X floatatom 46 52 5 0 127 2 MIDI_pitch - -;
 #X floatatom 61 89 5 0 127 2 MIDI_Velocity - -;

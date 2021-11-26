@@ -42,8 +42,8 @@ synth : simple mono subtractive synth
 - outlet [mono audio signal]
 
 fm : simple 2-operator frequency modulation synth
-- arguments (mod depth, mod index, attack in ms, release in ms)
-- inlets [MIDI pitch, MIDI velocity, modulation depth, modulation index, attack in ms, release in ms]
+- arguments (mod index, C:M ratio, attack in ms, release in ms)
+- inlets [MIDI pitch, MIDI velocity, modulation index, carrier:modulator ratio, attack in ms, release in ms]
 - outlet [mono audio signal]
 
 drums : simple synthesized drum kit

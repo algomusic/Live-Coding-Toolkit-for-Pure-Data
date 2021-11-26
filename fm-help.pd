@@ -1,13 +1,14 @@
 #N canvas 1004 890 409 352 12;
-#X floatatom 46 52 5 0 127 2 MIDI_pitch_(0-127) - -;
+#X floatatom 46 52 5 0 127 2 MIDI_Pitch_(0-127) - -;
 #X floatatom 60 89 5 0 127 2 MIDI_Velocity_(0-127) - -;
-#X floatatom 75 127 5 0 1000 2 Modulation_Depth_(0-100+) - -;
+#X floatatom 75 127 5 0 1000 2 Modulation_Index_(0-100+) - -;
 #X floatatom 105 205 5 0 1000 2 Attack_(ms) - -;
 #X floatatom 120 245 5 0 2000 2 Release_(ms) - -;
 #X obj 46 313 out, f 6;
 #X text 72 293 args = mod depth \, mod index \, attack \, release;
 #X obj 46 275 fm 20 1, f 11;
-#X floatatom 90 166 5 0 1000 2 Modulation_Index_(0-10+) - -;
+#X floatatom 90 166 5 0 1000 2 Modulator_Frequency_Ratio_(0-20+) -
+-;
 #X text 7 8 Simple 2-operator Frequency Modulation synthesizer;
 #X connect 0 0 7 0;
 #X connect 1 0 7 1;

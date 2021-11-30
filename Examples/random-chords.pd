@@ -1,0 +1,28 @@
+#N canvas 465 573 234 344 12;
+#X obj 49 34 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 49 90 cycle 60 80 12;
+#X obj 49 60 metro 0.25 114 permin;
+#X obj 49 210 quant 0 2 3 5 7 8 10;
+#X obj 49 124 rand 60 10;
+#X obj 92 183 rand 60 4;
+#X obj 88 153 rand 60 12;
+#X obj 49 293 midi, f 6;
+#X obj 75 265 * 80;
+#X obj 103 237 rand 80 20;
+#X obj 15 236 rand 100 20;
+#X connect 0 0 2 0;
+#X connect 1 0 4 0;
+#X connect 1 1 10 0;
+#X connect 1 2 8 0;
+#X connect 1 2 9 0;
+#X connect 2 0 1 0;
+#X connect 3 0 7 0;
+#X connect 4 0 3 0;
+#X connect 4 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
+#X connect 8 0 7 2;
+#X connect 9 1 8 1;
+#X connect 10 0 7 1;

@@ -1,4 +1,4 @@
-#N canvas 791 748 317 256 12;
+#N canvas 791 748 368 257 12;
 #X obj 48 30 metro 0.25 120 permin;
 #X obj 48 5 tgl 15 0 empty empty Start 17 7 0 10 -262144 -1 -1 0 1
 ;
@@ -18,9 +18,9 @@
 #X msg 117 117 8 2;
 #X floatatom 168 88 0 0 0 1 Transpose - -;
 #X floatatom 183 179 5 0 0 0 - - -;
-#X text 184 208 Beat count;
-#X floatatom 228 181 5 0 0 0 - - -;
-#X text 229 210 Pulse count;
+#X text 182 203 Beat count;
+#X floatatom 270 182 5 0 0 0 - - -;
+#X text 266 205 Pulse count;
 #X text 92 52 Velocity;
 #X text 60 94 Pitches;
 #X text 121 97 Dur;

@@ -8,6 +8,7 @@
  - periodic : stepped simple harmonic motion
  - ramp : stepped transition between two values
  - rand : linear, gaussian and random walk
+ - direct : pass input values to a specified outlet
  - quant : pitch class quanitze
  - midi : MIDI note output
  - synth : simple mono subtractive synth

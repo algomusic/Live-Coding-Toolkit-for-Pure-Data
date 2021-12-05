@@ -26,6 +26,11 @@ rand : linear, gaussian and random walk
 - inlets [trigger bang, value 1, value 2, upper limit, lower limit]
 - outlets [linear distribution, gaussian distribution, random walk (centre = start, deviation = step size, upper limit, lower limit)]
 
+direct : pass input values to a specified outlet
+- arguments (outlet number from 0 to 3)
+- inlets [value, outlet number from 0 to 3]
+- outlet (outlet 0, outlet 1, outlet 2, outlet 3)
+
 quant : pitch class quanitze
 - arguments (list of up to 11 MIDI pitch numbers ranged from 0-11)
 - inlets [MIDI pitch to quantize, pitch class list]

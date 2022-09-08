@@ -13,6 +13,7 @@
  - quant : pitch class quanitze
  - midi : MIDI note output
  - synth : simple mono subtractive synth
+ - polysynth : 8 voice version of synth
  - fm : simple 2-operator frequency modulation synth
  - drums : simple synthesized drum kit
  - panner : stereo audio panner

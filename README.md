@@ -4,6 +4,7 @@
  Download and add the folder to your Paths in Pure Data's preferences.
 
  Abstractions include:
+ - tempo : send bangs regularly at a particular BPM
  - cycle : phrase looper
  - periodic : stepped simple harmonic motion
  - ramp : stepped transition between two values

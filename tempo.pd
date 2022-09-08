@@ -1,0 +1,25 @@
+#N canvas 799 831 384 231 12;
+#X obj 27 47 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X msg 53 134 tempo \$1 permin;
+#X floatatom 53 108 5 0 300 1 BPM - - 0;
+#X obj 27 12 inlet toggle;
+#X obj 136 12 inlet bpm;
+#X obj 124 46 loadbang;
+#X obj 27 200 outlet;
+#X text 82 202 bangs;
+#X obj 124 77 f \$1;
+#X obj 165 78 f \$2;
+#X obj 27 165 metro 1 120 permin;
+#X obj 245 14 inlet beat_length;
+#X connect 0 0 10 0;
+#X connect 1 0 10 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
+#X connect 4 0 2 0;
+#X connect 5 0 8 0;
+#X connect 5 0 9 0;
+#X connect 8 0 2 0;
+#X connect 9 0 10 1;
+#X connect 10 0 6 0;
+#X connect 11 0 10 1;

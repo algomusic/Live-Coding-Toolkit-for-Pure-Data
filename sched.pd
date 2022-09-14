@@ -1,0 +1,28 @@
+#N canvas 738 404 364 232 12;
+#X obj 24 21 inlet data;
+#X obj 103 21 inlet bpm;
+#X obj 230 23 inlet numBeats;
+#X obj 27 154 pipe;
+#X obj 52 119 expr 60 / $f1 * 1000 * $f2;
+#X floatatom 52 93 5 0 0 0 - - - 0;
+#X floatatom 231 92 5 0 0 0 - - - 0;
+#X obj 104 69 f \$1;
+#X obj 104 45 loadbang;
+#X obj 244 46 loadbang;
+#X obj 244 70 f \$2;
+#X obj 27 183 outlet;
+#X obj 205 93 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X connect 0 0 3 0;
+#X connect 1 0 5 0;
+#X connect 2 0 6 0;
+#X connect 3 0 11 0;
+#X connect 4 0 3 1;
+#X connect 5 0 4 0;
+#X connect 6 0 4 1;
+#X connect 6 0 12 0;
+#X connect 7 0 5 0;
+#X connect 8 0 7 0;
+#X connect 9 0 10 0;
+#X connect 10 0 6 0;
+#X connect 12 0 5 0;

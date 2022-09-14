@@ -4,8 +4,8 @@
 #X text 64 604 pitch;
 #X text 116 604 velocity;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array \$0-velocities 2 float 2;
-#X coords 0 127 2 0 100 64 1 0 0;
+#X array \$0-velocities 1 float 2;
+#X coords 0 127 1 0 100 64 1 0 0;
 #X restore 579 409 graph;
 #X obj 57 27 inlet;
 #X obj 265 55 inlet;
@@ -14,17 +14,17 @@
 #X obj 57 252 f;
 #X obj 89 252 + 1;
 #X obj 33 309 mod 4;
-#X floatatom 33 433 5 0 0 0 - - -;
+#X floatatom 33 433 5 0 0 0 - - - 0;
 #X obj 297 157 list length;
-#X floatatom 297 181 5 0 0 0 - - -;
+#X floatatom 297 181 5 0 0 0 - - - 0;
 #X obj 265 125 t l l;
 #X obj 297 206 array size \$0-pitches;
 #X obj 466 116 list length;
-#X floatatom 466 140 5 0 0 0 - - -;
+#X floatatom 466 140 5 0 0 0 - - - 0;
 #X obj 434 86 t l l;
 #X obj 466 166 array size \$0-velocities;
-#X floatatom 139 358 5 0 0 0 - - -;
-#X floatatom 139 469 5 0 0 0 - - -;
+#X floatatom 139 358 5 0 0 0 - - - 0;
+#X floatatom 139 469 5 0 0 0 - - - 0;
 #X obj 33 462 sel 0;
 #X text 78 461 rest;
 #X obj 121 553 f;
@@ -32,13 +32,13 @@
 #X obj 722 49 inlet;
 #X obj 103 27 r \$0-del;
 #X obj 723 223 s \$0-del;
-#X floatatom 722 102 5 0 0 0 - - -;
-#X obj 57 78 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 57 226 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X floatatom 722 102 5 0 0 0 - - - 0;
+#X obj 57 78 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 57 226 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
 #X obj 815 50 inlet;
-#X floatatom 815 79 5 0 0 0 - - -;
+#X floatatom 815 79 5 0 0 0 - - - 0;
 #X text 810 25 transpose;
 #X obj 815 107 s \$0-trans;
 #X obj 65 550 + 0;
@@ -47,8 +47,8 @@
 #X obj 931 113 s \$0-reset;
 #X obj 350 25 loadbang;
 #X text 429 22 velocity list;
-#X floatatom 339 87 5 0 0 0 - - -;
-#X floatatom 388 86 5 0 0 0 - - -;
+#X floatatom 339 87 5 0 0 0 - - - 0;
+#X floatatom 388 86 5 0 0 0 - - - 0;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-pitches 1 float 2;
 #X coords 0 127 1 0 100 64 1 0 0;
@@ -62,23 +62,23 @@
 #X text 571 29 duration list;
 #X obj 642 64 inlet;
 #X obj 614 236 list length;
-#X floatatom 614 261 5 0 0 0 - - -;
+#X floatatom 614 261 5 0 0 0 - - - 0;
 #X obj 582 192 t l l;
-#X floatatom 582 100 5 0 0 0 - - -;
+#X floatatom 582 100 5 0 0 0 - - - 0;
 #X obj 614 287 array size \$0-durations;
 #X obj 582 323 array set \$0-durations;
 #X obj 138 319 mod 4;
-#X floatatom 206 346 5 0 0 0 - - -;
-#X floatatom 206 512 5 0 0 0 - - -;
+#X floatatom 206 346 5 0 0 0 - - - 0;
+#X floatatom 203 547 5 0 0 0 - - - 0;
 #X obj 206 320 mod 4;
-#X floatatom 802 223 5 0 0 0 - - -;
+#X floatatom 802 223 5 0 0 0 - - - 0;
 #X obj 283 579 outlet;
 #X text 278 605 beat cnt;
 #X obj 339 61 f \$1;
 #X obj 388 61 f \$2;
 #X obj 582 71 f \$3;
-#X floatatom 33 339 5 0 0 0 - - -;
-#X obj 206 579 outlet;
+#X floatatom 33 339 5 0 0 0 - - - 0;
+#X obj 203 579 outlet;
 #X text 197 603 duration;
 #X obj 736 77 f \$4;
 #X text 926 22 restart;
@@ -89,10 +89,10 @@
 #X obj 206 465 array get \$0-durations \$1 1;
 #X obj 139 441 array get \$0-velocities \$1 1;
 #X obj 33 403 array get \$0-pitches \$1 1;
-#X floatatom 12 278 5 0 0 0 - - -;
+#X floatatom 12 278 5 0 0 0 - - - 0;
 #X obj 57 102 f;
 #X obj 91 102 + 1;
-#X floatatom 57 131 5 0 0 0 - - -;
+#X floatatom 57 131 5 0 0 0 - - - 0;
 #X msg 74 185 1;
 #X obj 723 163 max 0;
 #X text 713 22 Delay ms;
@@ -101,14 +101,16 @@
 #X obj 57 159 sel 4;
 #X obj 142 74 f;
 #X obj 170 28 r \$0-reset;
-#X obj 142 52 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 142 52 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
 #X obj 57 53 pipe 0;
 #X obj 362 579 outlet;
 #X text 359 611 pulse cnt;
 #X obj 362 543 f;
 #X obj 396 543 + 1;
 #X msg 380 513 0;
+#X obj 206 514 max 1;
+#X obj 206 490 int;
 #X connect 5 0 92 0;
 #X connect 6 0 15 0;
 #X connect 7 0 19 0;
@@ -175,7 +177,7 @@
 #X connect 74 1 57 0;
 #X connect 74 2 60 0;
 #X connect 74 3 62 0;
-#X connect 76 0 59 0;
+#X connect 76 0 99 0;
 #X connect 77 0 22 0;
 #X connect 78 0 12 0;
 #X connect 80 0 81 0;
@@ -198,3 +200,5 @@
 #X connect 95 0 93 0;
 #X connect 96 0 95 1;
 #X connect 97 0 95 1;
+#X connect 98 0 59 0;
+#X connect 99 0 98 0;

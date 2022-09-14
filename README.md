@@ -16,6 +16,7 @@
  - synth : simple mono subtractive synth
  - polysynth : 8 voice version of synth
  - fm : simple 2-operator frequency modulation synth
+ - polyfm : 8 voice version of fm
  - drums : simple synthesized drum kit
  - gain : stereo audio gain control with mute
  - panner : stereo audio panner

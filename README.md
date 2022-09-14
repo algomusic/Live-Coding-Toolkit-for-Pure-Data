@@ -12,7 +12,7 @@
  - direct : pass input values to a specified outlet
  - quant : pitch class quanitze
  - midi : MIDI note output
- - map : Scales data from one range to another
+ - map : scales data from one range to another
  - synth : simple mono subtractive synth
  - polysynth : 8 voice version of synth
  - fm : simple 2-operator frequency modulation synth

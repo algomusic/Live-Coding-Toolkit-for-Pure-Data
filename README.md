@@ -17,6 +17,7 @@
  - polysynth : 8 voice version of synth
  - fm : simple 2-operator frequency modulation synth
  - drums : simple synthesized drum kit
+ - gain : stereo audio gain control with mute
  - panner : stereo audio panner
  - out : stereo audio output with reverb
 

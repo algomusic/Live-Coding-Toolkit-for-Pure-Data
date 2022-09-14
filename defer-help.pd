@@ -1,0 +1,12 @@
+#N canvas 227 413 319 285 12;
+#X floatatom 34 128 5 0 0 2 data - - 0;
+#X floatatom 34 210 5 0 0 0 - - - 0;
+#X floatatom 108 137 5 0 0 2 beats - - 0;
+#X floatatom 71 101 5 0 0 2 BPM - - 0;
+#X obj 34 168 defer 120 4;
+#X text 23 21 Schedule an event into the future by delaying by a number
+of beats.;
+#X connect 0 0 4 0;
+#X connect 2 0 4 2;
+#X connect 3 0 4 1;
+#X connect 4 0 1 0;

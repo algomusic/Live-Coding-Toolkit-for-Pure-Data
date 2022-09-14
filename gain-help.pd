@@ -1,0 +1,14 @@
+#N canvas 542 813 362 190 12;
+#X floatatom 113 54 5 0 0 2 Level\ 0\ -\ 1 - - 0;
+#X obj 138 79 tgl 15 0 empty empty Mute 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 64 146 out 1;
+#X obj 42 52 osc~ 200;
+#X text 43 14 Sereo (or mono) gain control with mute;
+#X obj 64 104 gain 0.1;
+#X connect 0 0 5 2;
+#X connect 1 0 5 3;
+#X connect 3 0 5 0;
+#X connect 3 0 5 1;
+#X connect 5 0 2 0;
+#X connect 5 1 2 1;

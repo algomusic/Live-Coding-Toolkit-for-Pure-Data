@@ -1,0 +1,35 @@
+#N canvas 382 407 340 363 12;
+#X obj 43 60 tempo 120 0.25;
+#X obj 43 35 tgl 15 0 empty empty Start 17 7 0 12 #fcfcfc #000000 #000000
+0 1;
+#X obj 44 203 quant 0 3 5 7 9;
+#X floatatom 44 234 5 0 0 0 - - - 0;
+#X obj 56 119 bng 15 250 50 0 empty empty Gen 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 205 116 bng 15 250 50 0 empty empty Send 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 56 142 randseq 8 24 36;
+#X obj 44 264 synth, f 11;
+#X obj 46 303 out 0.5;
+#X obj 44 174 cycle 1 0 1;
+#X text 40 10 Generate a random sequence of numbers;
+#X floatatom 96 116 5 0 100 2 Steps - - 0;
+#X floatatom 142 96 5 0 100000 2 Rand\ Max - - 0;
+#X floatatom 205 74 5 0 0 2 Offset - - 0;
+#X floatatom 255 75 5 0 0 2 Multiply - - 0;
+#X text 174 142 Click Gen \, then Send;
+#X connect 0 0 9 0;
+#X connect 0 2 9 6;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 7 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 5;
+#X connect 6 0 9 1;
+#X connect 7 0 8 0;
+#X connect 7 0 8 1;
+#X connect 9 0 2 0;
+#X connect 11 0 6 1;
+#X connect 12 0 6 2;
+#X connect 13 0 6 3;
+#X connect 14 0 6 4;

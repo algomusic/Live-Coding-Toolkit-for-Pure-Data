@@ -1,42 +1,40 @@
-#N canvas 747 662 368 257 12;
-#X obj 48 30 metro 0.25 120 permin;
-#X obj 48 5 tgl 15 0 empty empty Start 17 7 0 12 #fcfcfc #000000 #000000
+#N canvas 621 507 368 257 12;
+#X obj 46 5 tgl 15 0 empty empty Start 17 7 0 12 #fcfcfc #000000 #000000
 0 1;
-#X floatatom 47 193 5 0 0 0 - - - 0;
+#X floatatom 47 194 5 0 0 0 - - - 0;
 #X obj 21 194 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
 #X obj 47 162 cycle 60 100 4, f 16;
 #X floatatom 137 194 5 0 0 0 - - - 0;
-#X obj 156 133 bng 15 250 50 0 empty empty Reset 17 7 0 12 #fcfcfc
+#X obj 156 137 bng 15 250 50 0 empty empty Reset 17 7 0 12 #fcfcfc
 #000000 #000000;
 #X floatatom 91 194 5 0 0 0 - - - 0;
 #X msg 65 132 60 64;
-#X msg 83 72 100 80 40;
+#X msg 90 72 100 80 40;
 #X text 46 221 Pitch;
 #X text 92 222 Vel;
 #X text 137 222 Dur;
 #X msg 117 132 8 2;
-#X floatatom 168 88 0 0 0 1 Transpose - - 0;
 #X floatatom 183 194 5 0 0 0 - - - 0;
-#X text 182 218 Beat count;
-#X floatatom 270 197 5 0 0 0 - - - 0;
+#X text 182 221 Beat count;
+#X floatatom 270 194 5 0 0 0 - - - 0;
 #X text 266 220 Pulse count;
 #X text 92 52 Velocity;
 #X text 56 95 Pitches;
 #X text 122 111 Dur;
-#X floatatom 162 64 5 0 0 1 Delay - - 0;
+#X floatatom 157 108 5 0 0 1 Delay - - 0;
 #X text 56 112 0 = rest;
-#X connect 0 0 4 0;
-#X connect 1 0 0 0;
-#X connect 4 0 2 0;
-#X connect 4 0 3 0;
-#X connect 4 1 7 0;
-#X connect 4 2 5 0;
-#X connect 4 3 15 0;
-#X connect 4 4 17 0;
-#X connect 6 0 4 6;
-#X connect 8 0 4 1;
-#X connect 9 0 4 2;
-#X connect 13 0 4 3;
-#X connect 14 0 4 5;
-#X connect 22 0 4 4;
+#X obj 46 30 tempo 120 0.25;
+#X connect 0 0 22 0;
+#X connect 3 0 1 0;
+#X connect 3 0 2 0;
+#X connect 3 1 6 0;
+#X connect 3 2 4 0;
+#X connect 3 3 13 0;
+#X connect 3 4 15 0;
+#X connect 5 0 3 5;
+#X connect 7 0 3 1;
+#X connect 8 0 3 2;
+#X connect 12 0 3 3;
+#X connect 20 0 3 4;
+#X connect 22 0 3 0;

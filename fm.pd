@@ -1,4 +1,4 @@
-#N canvas 1448 302 852 400 12;
+#N canvas 828 302 852 400 12;
 #X obj 53 130 mtof;
 #X obj 53 331 *~;
 #X obj 179 257 vline~;
@@ -10,7 +10,7 @@
 #X obj 53 363 outlet~;
 #X obj 314 41 inlet;
 #X obj 246 44 loadbang;
-#X floatatom 301 123 5 0 500 0 - - -;
+#X floatatom 301 123 5 0 500 0 - - - 0;
 #X obj 246 93 f \$1;
 #X obj 246 68 t b b;
 #X obj 246 118 sel 0;
@@ -19,12 +19,12 @@
 #X obj 615 40 inlet;
 #X text 609 15 Attack;
 #X obj 536 44 loadbang;
-#X floatatom 615 143 5 1 200 0 - - -;
+#X floatatom 615 143 5 1 200 0 - - - 0;
 #X obj 536 68 t b b;
 #X obj 536 118 sel 0;
 #X obj 748 42 inlet;
 #X obj 669 46 loadbang;
-#X floatatom 748 145 5 1 2000 0 - - -;
+#X floatatom 748 145 5 1 2000 0 - - - 0;
 #X obj 669 70 t b b;
 #X obj 669 120 sel 0;
 #X text 742 17 Release;
@@ -169,18 +169,18 @@
 #X restore 335 220 graph;
 #X obj 182 359 tabwrite~ \$0-display;
 #X obj 182 332 metro 100;
-#X obj 182 313 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 182 313 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
 #X msg 581 98 12;
 #X msg 716 98 350;
 #X obj 52 102 t b f;
-#X obj 26 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 26 127 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
 #X obj 179 149 expr if($f1 == 0 \, 0.5 \, $f1);
-#X floatatom 196 123 5 0 0 0 - - -;
+#X floatatom 196 123 5 0 0 0 - - - 0;
 #X obj 463 40 inlet;
 #X obj 391 44 loadbang;
-#X floatatom 463 143 5 0 200 0 - - -;
+#X floatatom 463 143 5 0 200 0 - - - 0;
 #X obj 391 68 t b b;
 #X obj 391 118 sel 0;
 #X obj 391 93 f \$2;
@@ -192,22 +192,22 @@
 #X obj 748 72 clip 0 9000;
 #X obj 53 296 osc~ 440;
 #X obj 53 240 +~ 1;
-#X floatatom 92 241 5 0 5000 2 Freq - -;
+#X floatatom 92 241 5 0 5000 2 Freq - - 0;
 #X obj 53 269 *~ 440;
 #X obj 53 212 *~;
 #X obj 128 189 *~;
 #X text 112 167 Env Mod;
 #X obj 53 161 *;
 #X obj 53 186 osc~ 440;
-#X floatatom 8 188 5 0 0 0 - - -;
+#X floatatom 8 188 5 0 0 0 - - - 0;
 #X obj 314 71 clip 0 500;
 #X msg 284 94 12;
 #X obj 536 93 f \$3;
 #X obj 669 95 f \$4;
 #X obj 52 52 int;
-#X obj 178 180 f 0.8;
 #X text 294 12 Mod index;
 #X text 443 13 C:M Ratio;
+#X obj 178 180 f 0.75;
 #X connect 0 0 54 0;
 #X connect 0 0 59 0;
 #X connect 1 0 8 0;
@@ -245,9 +245,9 @@
 #X connect 34 0 20 0;
 #X connect 35 0 25 0;
 #X connect 36 0 37 0;
-#X connect 36 0 67 0;
+#X connect 36 0 69 0;
 #X connect 36 1 0 0;
-#X connect 38 0 67 1;
+#X connect 38 0 69 1;
 #X connect 40 0 47 0;
 #X connect 41 0 43 0;
 #X connect 42 0 59 1;
@@ -276,4 +276,4 @@
 #X connect 64 0 22 0;
 #X connect 65 0 27 0;
 #X connect 66 0 48 0;
-#X connect 67 0 15 0;
+#X connect 69 0 15 0;

@@ -1,4 +1,4 @@
-#N canvas 1133 159 505 324 12;
+#N canvas 370 206 1027 684 12;
 #X obj 29 26 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
 0 1;
 #X obj 29 70 cycle, f 10;
@@ -17,12 +17,12 @@
 #000000 #000000;
 #X obj 93 270 s next;
 #X obj 135 71 r next;
-#X obj 206 145 f;
-#X obj 240 146 + 1;
-#X obj 206 174 sel 7;
-#X msg 206 202 1;
-#X msg 224 119 0;
-#X floatatom 257 175 5 0 0 0 - - - 0;
+#X obj 207 147 f;
+#X obj 241 148 + 1;
+#X obj 208 203 sel 7;
+#X msg 208 231 1;
+#X msg 225 121 0;
+#X floatatom 259 204 5 0 0 0 - - - 0;
 #X text 54 22 Use 'direct' to create a transition network;
 #X obj 96 95 direct;
 #X obj 351 181 drums, f 9;
@@ -38,7 +38,7 @@
 #X obj 408 118 r h;
 #X obj 29 46 tempo 120 0.25;
 #X obj 375 226 hsl 64 15 0 1 0 1 empty empty Vol -2 -8 0 10 #fcfcfc
-#000000 #000000 3600 1;
+#000000 #000000 7200 1;
 #X connect 0 0 33 0;
 #X connect 1 4 21 0;
 #X connect 2 0 3 0;

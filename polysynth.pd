@@ -1,4 +1,4 @@
-#N canvas 1553 193 573 536 12;
+#N canvas 1143 177 573 536 12;
 #X floatatom 55 239 5 0 0 0 - - - 0;
 #X floatatom 101 240 5 0 0 0 - - - 0;
 #X floatatom 148 239 5 0 0 0 - - - 0;
@@ -46,6 +46,7 @@
 #X obj 14 109 unpack 0 0 0 0 0 0 0 0;
 #X obj 13 144 clip 0 127;
 #X obj 55 354 pack f f f 500 10 500;
+#X floatatom 55 82 5 0 0 0 - - - 0;
 #X connect 0 0 7 0;
 #X connect 1 0 8 0;
 #X connect 2 0 8 1;
@@ -63,6 +64,7 @@
 #X connect 13 0 19 0;
 #X connect 14 0 23 0;
 #X connect 14 0 43 0;
+#X connect 14 0 46 0;
 #X connect 15 0 5 1;
 #X connect 16 0 10 0;
 #X connect 17 0 11 0;

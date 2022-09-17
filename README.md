@@ -13,7 +13,7 @@
  - rand : linear, gaussian and random walk
  - direct : pass input values to a specified outlet
  - quant : pitch class quanitze
- - midi : MIDI note output
+ - midi : MIDI note output and MIDI note and control change input
  - map : scales data from one range to another
  - synth : simple mono subtractive synth
  - polysynth : 8 voice version of synth

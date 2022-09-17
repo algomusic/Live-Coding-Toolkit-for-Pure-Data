@@ -1,27 +1,26 @@
 #N canvas 485 522 567 272 12;
 #X msg 46 112 64 66 71 73 74 66 64 73 71 66 74 73;
 #X obj 27 142 cycle 60 100 1;
-#X obj 27 194 midi 100 240 1;
 #X obj 27 25 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
 0 1;
 #X floatatom 71 34 5 0 300 1 BPM - - 0;
 #X obj 27 63 tempo 90 0.25;
-#X text 41 89 bang message;
-#X text 158 206 outlet = pitch \, velocity \, cc val \, c val (0-1)
+#X text 179 200 outlet = pitch \, velocity \, cc val \, c val (0-1)
 ;
 #X text 144 88 Inlet will prevent retriggering of sounding notes;
-#X text 157 181 args = velocity or CC numb \, duration \, channel;
 #X text 143 17 Manages MIDI input and output in one place;
 #X text 145 43 Best to use for one or the other if adding args;
-#X text 157 162 inlets = Pitch Velocity Duration Channel CC Numb;
+#X text 179 153 inlets = Pitch Velocity Duration Channel CC Numb;
 #X text 146 68 CC Channel is ignored;
-#X msg 122 168 21;
-#X floatatom 90 225 5 0 0 1 CC\ out - - 0;
+#X floatatom 104 226 5 0 0 1 CC\ out - - 0;
+#X text 178 175 args = velocity \, duration \, channel \, CC numb;
+#X obj 27 194 midi 100 240 1 21;
+#X msg 47 87 loadbang;
 #X connect 0 0 1 1;
-#X connect 1 0 2 0;
-#X connect 1 1 2 1;
-#X connect 2 2 15 0;
-#X connect 3 0 5 0;
-#X connect 4 0 5 1;
-#X connect 5 0 1 0;
-#X connect 14 0 2 4;
+#X connect 1 0 13 0;
+#X connect 1 1 13 1;
+#X connect 2 0 4 0;
+#X connect 3 0 4 1;
+#X connect 4 0 1 0;
+#X connect 13 2 11 0;
+#X connect 14 0 0 0;

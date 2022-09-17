@@ -56,9 +56,12 @@
 #X text 350 523 CC Val;
 #X text 419 524 Cc Val scaled;
 #X obj 351 466 spigot 1;
-#X obj 407 42 inlet;
+#X obj 413 42 inlet;
 #X obj 370 414 expr if ($f2 < 1 \, 1 \, if ($f1 == $f2 \, 1 \, 0))
 ;
+#X obj 37 37;
+#X obj 414 97 f \$4;
+#X obj 427 68 loadbang;
 #X connect 0 0 32 0;
 #X connect 1 0 34 0;
 #X connect 3 0 26 0;
@@ -111,5 +114,7 @@
 #X connect 48 0 47 0;
 #X connect 53 0 46 0;
 #X connect 53 0 48 0;
-#X connect 54 0 55 1;
+#X connect 54 0 57 0;
 #X connect 55 0 53 1;
+#X connect 57 0 55 1;
+#X connect 58 0 57 0;

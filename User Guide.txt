@@ -7,8 +7,8 @@ By Andrew R. Brown, 2021
 Abstractions:
 
 cycle : phrase looper
-- arguments (pitch, velocity, duration, delay, transpose)
-- inlets [trigger bangs, pitch list, velocity list, duration list, delay in ms, transpose in semitones, restart count]
+- arguments (pitch, velocity, duration, delay)
+- inlets [trigger bangs, pitch list, velocity list, duration list, delay in ms, restart count]
 - outlets [next pitch, next velocity, next duration, beat count, pulse count]
 
 periodic : stepped simple harmonic motion
@@ -16,52 +16,82 @@ periodic : stepped simple harmonic motion
 - inlets [step, numb of steps, centre value, range]
 - outlet [next value]
 
+randseq : generate and store and randomised number sequence
+- arguments (numb of steps, random range, offset, multiply)
+- inlets [bang to generate seq, numb of steps, random range, offset, multiply, bang to send seq]
+- outlet [list of seq data]
+
+defer : schedule an event into the future by a number of beats
+- arguments (bpm, number of beats to wait)
+- inlets [data, bpm, number of beats to wait]
+- outlet [delayed data]
+
 ramp : stepped transition between two values
 - arguments (numb of steps, start value, end value, curve)
 - inlets [step, numb of steps, start value, end value, curve, reset]
-- outlet [next value]
+- outlet [next value, bang on last step]
 
 rand : linear, gaussian and random walk
 - arguments (centre, deviation, upper limit, lower limit)
-- inlets [trigger bang, value 1, value 2, upper limit, lower limit]
-- outlets [linear distribution, gaussian distribution, random walk (centre = start, deviation = step size, upper limit, lower limit)]
+- inlets [trigger bang, centre/start value, deviation value, lower limit, upper limit]
+- outlets [linear distribution, gaussian distribution, random walk]
 
 direct : pass input values to a specified outlet
 - arguments (outlet number from 0 to 3)
 - inlets [value, outlet number from 0 to 3]
-- outlet (outlet 0, outlet 1, outlet 2, outlet 3)
+- outlet [outlet 0, outlet 1, outlet 2, outlet 3]
 
 quant : pitch class quanitze
 - arguments (list of up to 11 MIDI pitch numbers ranged from 0-11)
 - inlets [MIDI pitch to quantize, pitch class list]
 - outlet [quantised MIDI pitch]
 
-midi : MIDI note output
-- arguments (MIDI pitch, MIDI velocity, duration in ms, MIDI channel from 1 to 16)
-- inlets [MIDI pitch, MIDI velocity, duration in ms, MIDI channel from 1 to 16]
-- outlets [none]
+midi : MIDI note send and note and control change receive
+- arguments (MIDI send velocity, send duration in ms, MIDI send channel from 1 to 16, receive control change number)
+- inlets [MIDI pitch, MIDI velocity, duration in ms, MIDI channel from 1 to 16, set cc number to receive]
+- outlets [received pitch, received velocity, received cc val (0-127), scaled received cc value (0-1)]
+
+map : scales data from one range to another
+- arguments (input min, input max, output min, output max)
+- inlets [value to be scaled, input min, input max, output min, output max]
+- outlet [scaled value]
 
 synth : simple mono subtractive synth
-- arguments (filter cutoff, attack in ms, release in ms)
-- inlets [MIDI pitch, MIDI velocity, filter cutoff, attack in ms, release in ms]
+- arguments (filter cutoff, attack in ms, release in ms, glide in ms)
+- inlets [MIDI pitch, MIDI velocity, filter cutoff, attack in ms, release in ms, glide in ms]
 - outlet [mono audio signal]
+
+polysynth : 8 voice version of synth
+- arguments (cutoff, attack in ms, release in ms)
+- inlets [pitch, velocity, cutoff, attack, release]
+- outlet [left audio signal, right audio signal]
 
 fm : simple 2-operator frequency modulation synth
 - arguments (mod index, C:M ratio, attack in ms, release in ms)
 - inlets [MIDI pitch, MIDI velocity, modulation index, carrier:modulator ratio, attack in ms, release in ms]
 - outlet [mono audio signal]
 
+polyfm : 8 voice version of fm
+- arguments (mod index, C:M ratio, attack in ms, release in ms)
+- inlets [pitch, velocity, mod index, C:M ratio, attack in ms, release in ms]
+- outlet [left audio signal, right audio signal]
+
 drums : simple synthesized drum kit
 - arguments (none)
-- inlets [kick trigger, snare trigger, hats trigger, kick velocity from 0 - 127, snare velocity, hats velocity]
+- inlets [kick trigger, snare trigger, hats trigger, kick level from 0 - 1, snare level, hats level]
 - outlet [mono audio signal]
 
+gain : stereo audio gain control with mute
+- arguments (level 0-1)
+- inlets [left audio input, right audio input], level 0-1, mute 0 or 1]
+- outlet [left audio signal, right audio signal]]
+
 panner : stereo audio panner
-- arguments (none)
+- arguments (pan position 0-1)
 - inlets [audio signal, pan position from 0.0 - 1.0]
 - outlets [audio out left, audio out right]
 
 out : stereo audio output with reverb
-- arguments (none)
-- inlets (audio input left, audio input right, volume level from 0.0 to 1.0, reverb amount from 0 tp 100)
+- arguments (volume)
+- inlets (audio input left, audio input right, volume level from 0.0 to 1.0, reverb amount from 0 to 100)
 - outlets [none]

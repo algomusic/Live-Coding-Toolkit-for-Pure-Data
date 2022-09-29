@@ -1,14 +1,14 @@
 #N canvas 627 853 252 230 12;
-#X obj 36 18 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+#X obj 35 18 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
 0 1;
 #X floatatom 79 104 5 0 0 0 - - - 0;
 #X obj 71 169 out~ 0.1;
-#X obj 79 77 periodic 4 38 -4;
 #X obj 35 45 tempo 120 0.5;
 #X obj 79 132 drums~, f 10;
-#X connect 0 0 4 0;
-#X connect 1 0 5 0;
-#X connect 3 0 1 0;
-#X connect 4 1 3 0;
-#X connect 5 0 2 0;
-#X connect 5 0 2 1;
+#X obj 79 77 periodic 4 42 4;
+#X connect 0 0 3 0;
+#X connect 1 0 4 0;
+#X connect 3 1 5 0;
+#X connect 4 0 2 0;
+#X connect 4 0 2 1;
+#X connect 5 0 1 0;

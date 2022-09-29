@@ -1,4 +1,4 @@
-#N canvas 1143 177 573 536 12;
+#N canvas 1143 177 570 532 12;
 #X floatatom 55 239 5 0 0 0 - - - 0;
 #X floatatom 101 240 5 0 0 0 - - - 0;
 #X floatatom 148 239 5 0 0 0 - - - 0;
@@ -18,9 +18,9 @@
 #X obj 234 20 inlet cutoff;
 #X obj 340 20 inlet attack;
 #X obj 445 20 inlet release;
-#X obj 31 487 outlet~;
+#X obj 31 488 outlet~;
 #X obj 175 450 /~ 4;
-#X obj 175 482 outlet~;
+#X obj 175 483 outlet~;
 #X obj 31 419 clone synth-wrapper 8;
 #X obj 65 52 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;

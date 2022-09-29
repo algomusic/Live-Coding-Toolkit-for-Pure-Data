@@ -15,14 +15,15 @@
  - quant : pitch class quanitze
  - midi : MIDI note output and MIDI note and control change input
  - map : scales data from one range to another
- - synth : simple mono subtractive synth
- - polysynth : 8 voice version of synth
- - fm : simple 2-operator frequency modulation synth
- - polyfm : 8 voice version of fm
- - drums : simple synthesized drum kit
- - gain : stereo audio gain control with mute
- - panner : stereo audio panner
- - out : stereo audio output with reverb
+ - synth~ : simple mono subtractive synth
+ - polysynth~ : 8 voice version of synth
+ - fm~ : simple 2-operator frequency modulation synth
+ - polyfm~ : 8 voice version of fm
+ - drums~ : simple synthesized drum kit
+ - echo~ : mono audio feedback delay
+ - gain~ : stereo audio gain control with mute
+ - panner~ : stereo audio panner
+ - out~ : stereo audio output with reverb
 
 A User Guide, Help files, and Examples are included.
 

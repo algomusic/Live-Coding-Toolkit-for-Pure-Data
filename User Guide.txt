@@ -56,42 +56,47 @@ map : scales data from one range to another
 - inlets [value to be scaled, input min, input max, output min, output max]
 - outlet [scaled value]
 
-synth : simple mono subtractive synth
+synth~ : simple mono subtractive synth
 - arguments (filter cutoff, attack in ms, release in ms, glide in ms)
 - inlets [MIDI pitch, MIDI velocity, filter cutoff, attack in ms, release in ms, glide in ms]
 - outlet [mono audio signal]
 
-polysynth : 8 voice version of synth
+polysynth~ : 8 voice version of synth
 - arguments (cutoff, attack in ms, release in ms)
 - inlets [pitch, velocity, cutoff, attack, release]
 - outlet [left audio signal, right audio signal]
 
-fm : simple 2-operator frequency modulation synth
+fm~ : simple 2-operator frequency modulation synth
 - arguments (mod index, C:M ratio, attack in ms, release in ms)
 - inlets [MIDI pitch, MIDI velocity, modulation index, carrier:modulator ratio, attack in ms, release in ms]
 - outlet [mono audio signal]
 
-polyfm : 8 voice version of fm
+polyfm~ : 8 voice version of fm
 - arguments (mod index, C:M ratio, attack in ms, release in ms)
 - inlets [pitch, velocity, mod index, C:M ratio, attack in ms, release in ms]
 - outlet [left audio signal, right audio signal]
 
-drums : simple synthesized drum kit
+drums~ : simple synthesized drum kit
 - arguments (none)
 - inlets [kick trigger, snare trigger, hats trigger, kick level from 0 - 1, snare level, hats level]
 - outlet [mono audio signal]
 
-gain : stereo audio gain control with mute
+echo~ : mono audio feedback delay
+- arguments delay-time, delay-level, feedback
+- inlets [mono audio signal, delay-time, delay-level, feedback]
+- outlets [mono audio signal]
+
+gain~ : stereo audio gain control with mute
 - arguments (level 0-1)
 - inlets [left audio input, right audio input], level 0-1, mute 0 or 1]
 - outlet [left audio signal, right audio signal]]
 
-panner : stereo audio panner
+panner~ : stereo audio panner
 - arguments (pan position 0-1)
 - inlets [audio signal, pan position from 0.0 - 1.0]
 - outlets [audio out left, audio out right]
 
-out : stereo audio output with reverb
+out~ : stereo audio output with reverb
 - arguments (volume)
 - inlets (audio input left, audio input right, volume level from 0.0 to 1.0, reverb amount from 0 to 100)
 - outlets [none]

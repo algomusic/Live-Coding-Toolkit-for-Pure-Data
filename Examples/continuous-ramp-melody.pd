@@ -12,16 +12,16 @@
 #X obj 170 62 t b b b;
 #X obj 185 144 f 72;
 #X obj 23 182 change;
-#X obj 84 244 hsl 128 15 0 1 0 0 empty empty Volume -2 -8 0 10 #fce0c4
+#X obj 97 242 hsl 128 15 0 1 0 0 empty empty Volume -2 -8 0 10 #fce0c4
 #000000 #000000 0 1;
 #X msg 59 8 100 80;
 #X obj 23 155 quant 0 2 3 5 6 9 11;
-#X obj 23 209 fm 5 2 20 700;
-#X obj 23 239 out 0.1;
 #X obj 124 8 loadbang;
+#X obj 23 209 fm~ 5 2 20 700;
+#X obj 23 239 out~ 0.1;
 #X connect 0 0 13 0;
 #X connect 1 0 3 0;
-#X connect 2 1 14 1;
+#X connect 2 1 15 1;
 #X connect 2 4 7 0;
 #X connect 3 0 2 0;
 #X connect 4 0 7 5;
@@ -34,10 +34,10 @@
 #X connect 8 1 5 0;
 #X connect 8 2 9 0;
 #X connect 9 0 7 2;
-#X connect 10 0 14 0;
-#X connect 11 0 15 2;
+#X connect 10 0 15 0;
+#X connect 11 0 16 2;
 #X connect 12 0 2 2;
 #X connect 13 0 10 0;
-#X connect 14 0 15 0;
-#X connect 14 0 15 1;
-#X connect 16 0 12 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 15 0 16 1;

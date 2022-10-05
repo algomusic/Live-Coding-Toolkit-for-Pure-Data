@@ -1,4 +1,4 @@
-#N canvas 534 598 489 324 12;
+#N canvas 1245 173 508 324 12;
 #X obj 135 277 out~ 0.1;
 #X msg 181 65 samples/hello.wav;
 #X obj 136 102 bng 15 250 50 0 empty empty empty 17 7 0 10 #c6ffc7
@@ -13,11 +13,12 @@
 0;
 #X floatatom 250 147 5 0 1 2 Start\ Pos\ (0-1) - - 0;
 #X floatatom 279 182 5 0 1 2 End\ Pos\ (0-1) - - 0;
-#X obj 311 217 hsl 100 15 0 1 0 0 empty empty Scrub\ (0-1) -2 -8 0
-10 #fcfcfc #000000 #000000 0 1;
+#X obj 311 217 hsl 100 15 0 1 0 0 empty empty Scrub\\\ (0-1) -2 -8
+0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 136 238 sample~ samples/hello.wav;
 #X floatatom 164 207 5 0 127 2 Vel\ (0-127) - - 0;
 #X text 81 8 load and playback a mono sample;
+#X text 264 108 Either 1 or 60 is normal speed;
 #X connect 1 0 12 2;
 #X connect 2 0 12 0;
 #X connect 3 0 12 2;

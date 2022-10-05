@@ -78,7 +78,12 @@ polyfm~ : 8 voice version of fm
 
 drums~ : simple synthesized drum kit
 - arguments (none)
-- inlets [kick trigger, snare trigger, hats trigger, kick level from 0 - 1, snare level, hats level]
+- inlets [kick trigger, snare trigger, hats trigger, kick level (0-1), snare level, hats level]
+- outlet [mono audio signal]
+
+sample~ : load and playback a mono audio file
+- arguments (filename including path relative to abstraction)
+- inlets [trigger (pitch or bang), velocity, filename, playback speed (0-11 or 12-127), start position (0-1), end position (0-1), scrub pos (0-1)]
 - outlet [mono audio signal]
 
 echo~ : stereo audio feedback delay

@@ -82,9 +82,14 @@ drums~ : simple synthesized drum kit
 - outlet [mono audio signal]
 
 sample~ : load and playback a mono audio file
-- arguments (filename including path relative to abstraction)
+- arguments (filename, including path relative to abstraction)
 - inlets [trigger (pitch or bang), velocity, filename, playback speed (0-11 or 12-127), start position (0-1), end position (0-1), scrub pos (0-1)]
 - outlet [mono audio signal]
+
+polysample~ : load and playback a mono audio file
+- arguments (filename, including path relative to abstraction)
+- inlets [trigger (pitch, pitch list or bang), velocity, filename, playback speed (0-11 or 12-127), start position (0-1), end position (0-1)]
+- outlet [audio out left, audio out right]
 
 echo~ : stereo audio feedback delay
 - arguments delay-time, delay-level, feedback

@@ -16,11 +16,12 @@
  - midi : MIDI note output and MIDI note and control change input
  - map : scales data from one range to another
  - synth~ : simple mono subtractive synth
- - polysynth~ : 8 voice version of synth
+ - polysynth~ : 8 voice version of synth~
  - fm~ : simple 2-operator frequency modulation synth
- - polyfm~ : 8 voice version of fm
+ - polyfm~ : 8 voice version of fm~
  - drums~ : simple synthesized drum kit
  - sample~ : load and playback a mono audio file
+ - polysample~ : 8 voice version of sample~
  - echo~ : stereo audio feedback delay
  - gain~ : stereo audio gain control with mute
  - panner~ : stereo audio panner

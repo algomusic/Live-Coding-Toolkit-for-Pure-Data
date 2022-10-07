@@ -1,23 +1,25 @@
-#N canvas 632 331 308 223 12;
+#N canvas 561 293 308 223 12;
 #X obj 29 102 tgl 15 0 empty empty Go 0 -9 0 12 #fcfcfc #000000 #000000
 0 1;
-#X obj 29 163 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 31 172 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
 #X obj 29 129 tempo 120 1;
 #X msg 103 100 0.25;
 #X floatatom 61 100 5 0 0 2 BPM - - 0;
 #X msg 150 101 1;
 #X text 105 79 Beat Length;
-#X floatatom 66 161 5 0 0 3 Bang\ counter - - 0;
-#X obj 115 163 bng 15 250 50 0 empty empty Bang\\\ on\\\ start 17 7
-0 10 #fcfcfc #000000 #000000;
+#X floatatom 65 170 5 0 0 3 Counter - - 0;
+#X obj 189 176 bng 15 250 50 0 empty empty Bang\ on\ start 0 25 0 12
+#fcfcfc #000000 #000000;
 #X text 24 14 Outputs a steady stream of bangs;
 #X text 24 34 at the set beats per minute;
 #X text 24 54 each beat length division (multiple);
+#X floatatom 126 171 5 0 0 3 ms - - 0;
 #X connect 0 0 2 0;
 #X connect 2 0 1 0;
 #X connect 2 1 7 0;
-#X connect 2 2 8 0;
+#X connect 2 2 12 0;
+#X connect 2 3 8 0;
 #X connect 3 0 2 2;
 #X connect 4 0 2 1;
 #X connect 5 0 2 2;

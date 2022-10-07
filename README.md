@@ -7,6 +7,7 @@
  - tempo : send bangs regularly at a particular BPM
  - cycle : phrase looper
  - periodic : stepped simple harmonic motion
+ - euclid : euclidean rhythm generator
  - randseq : generate and store and randomised number sequence
  - defer : schedule an event into the future by a number of beats
  - ramp : stepped transition between two values

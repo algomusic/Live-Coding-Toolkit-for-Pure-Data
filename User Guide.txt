@@ -6,15 +6,25 @@ By Andrew R. Brown, 2021
 
 Abstractions:
 
+tempo : BPM metronome
+- arguments (beats per minute, beat subdivision)
+- inlets [start/stop toggle, BPM, Sub-division]
+- outlets [pulse bang, pulse count, pulse dur (ms), (re)start bang]
+
 cycle : phrase looper
-- arguments (pitch, velocity, duration, delay)
-- inlets [trigger bangs, pitch list, velocity list, duration list, delay in ms, restart count]
+- arguments (pitch, velocity, duration)
+- inlets [trigger bangs, pitch list, velocity list, duration list, restart count]
 - outlets [next pitch, next velocity, next duration, beat count, pulse count]
 
 periodic : stepped simple harmonic motion
 - arguments (numb of steps, centre value, range)
 - inlets [step, numb of steps, centre value, range]
 - outlet [next value]
+
+euclid : euclidean rhythm generator
+- arguments (seq length, hits per seq, rotation)
+- inlets [bang or step, seq length, hits per seq, rotation]
+- outlet [step trigger]
 
 randseq : generate and store and randomised number sequence
 - arguments (numb of steps, random range, offset, multiply)

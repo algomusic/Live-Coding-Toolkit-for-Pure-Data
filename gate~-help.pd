@@ -1,0 +1,31 @@
+#N canvas 765 292 363 325 12;
+#X obj 48 102 bng 15 250 50 0 empty empty Start 17 7 0 10 #c4fcc4 #000000
+#000000;
+#X obj 87 42 tgl 15 0 empty empty Repeat_on-off 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 43 264 out~ 0.2;
+#X obj 81 240 hsl 50 15 0 1 0 0 empty empty Vol -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 48 204 gate~ 0.5;
+#X floatatom 141 175 5 0 1 2 Probability_(0-1) - - 0;
+#X obj 48 131 sample~ samples/hello.wav;
+#X text 28 10 Probabilistically let audio through or not;
+#X obj 90 176 tgl 15 0 empty empty Toggle 0 -10 0 12 #c4fcc4 #000000
+#000000 0 1;
+#X text 141 225 0 = never \, 1 = always;
+#X text 142 246 0.5 = half the time;
+#X text 142 202 Arg 1 is likelihood value;
+#X obj 48 67 gate 0;
+#X text 11 187 Audio;
+#X text 58 186 Trig;
+#X connect 0 0 4 1;
+#X connect 0 0 6 0;
+#X connect 1 0 12 1;
+#X connect 3 0 2 2;
+#X connect 4 0 2 0;
+#X connect 4 0 2 1;
+#X connect 5 0 4 2;
+#X connect 6 0 4 0;
+#X connect 6 1 12 0;
+#X connect 8 0 4 2;
+#X connect 12 0 0 0;

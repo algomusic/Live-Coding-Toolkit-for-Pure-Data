@@ -15,6 +15,7 @@
  - quant : pitch class quanitze
  - midi : MIDI note output and MIDI note and control change input
  - map : scales data from one range to another
+ - gate : probabilistically let data through or not
  - synth~ : simple mono subtractive synth
  - polysynth~ : 8 voice version of synth~
  - fm~ : simple 2-operator frequency modulation synth
@@ -23,6 +24,7 @@
  - sample~ : load and playback a mono audio file
  - polysample~ : 8 voice version of sample~
  - echo~ : stereo audio feedback delay
+ - gate~ : probabilistically let audio through or not
  - gain~ : stereo audio gain control with mute
  - panner~ : stereo audio panner
  - out~ : stereo audio output with reverb

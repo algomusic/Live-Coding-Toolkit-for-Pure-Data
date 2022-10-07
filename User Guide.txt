@@ -56,6 +56,11 @@ map : scales data from one range to another
 - inlets [value to be scaled, input min, input max, output min, output max]
 - outlet [scaled value]
 
+gate : probabilistically let data through or not
+- arguments (prob value 0-1)
+- inlets [data in, prob value (0-1)]
+- outlet [data out]
+
 synth~ : simple mono subtractive synth
 - arguments (filter cutoff, attack in ms, release in ms, glide in ms)
 - inlets [MIDI pitch, MIDI velocity, filter cutoff, attack in ms, release in ms, glide in ms]
@@ -95,6 +100,11 @@ echo~ : stereo audio feedback delay
 - arguments delay-time, delay-level, feedback
 - inlets [audio input left, audio input right, delay-time, delay-level, feedback]
 - outlets [audio out left, audio out right]
+
+gate~ : probabilistically let audio through or not
+- arguments (prob value 0-1)
+- inlets [audio signal in, trigger prob calc, prob value (0-1)]
+- outlet [audio signal out]
 
 gain~ : stereo audio gain control with mute
 - arguments (level 0-1)

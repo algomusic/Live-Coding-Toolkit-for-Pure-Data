@@ -4,26 +4,26 @@
 0 1;
 #X obj 40 316 quant 0 3 5 7 9;
 #X floatatom 40 344 5 0 0 0 - - - 0;
-#X obj 58 154 bng 15 250 50 0 empty empty Gen 17 7 0 10 #fcfcfc #000000
+#X obj 56 154 bng 15 250 50 0 empty empty Gen 17 7 0 10 #fcfcfc #000000
 #000000;
-#X obj 162 187 bng 15 250 50 0 empty empty Resend 17 7 0 10 #fcfcfc
+#X obj 160 187 bng 15 250 50 0 empty empty Resend 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X text 11 11 Generate a random sequence of numbers;
-#X floatatom 78 184 5 0 100 2 Steps - - 0;
-#X floatatom 120 185 5 0 100000 2 Rand\ Max - - 0;
-#X floatatom 101 150 5 0 0 2 Base - - 0;
-#X floatatom 143 152 5 0 0 2 Expand\ (+-1.0) - - 0;
+#X floatatom 76 184 5 0 100 2 Steps - - 0;
+#X floatatom 118 185 5 0 100000 2 Rand\ Max - - 0;
+#X floatatom 99 150 5 0 0 2 Base - - 0;
+#X floatatom 141 152 5 0 0 2 Expand\ (+-1.0) - - 0;
 #X obj 40 399 out~ 0.5;
 #X obj 40 369 synth~, f 11;
-#X obj 58 124 sel 1;
-#X obj 58 211 randseq 8 36 12;
+#X obj 56 124 sel 1;
+#X obj 56 211 randseq 8 36 12;
 #X text 12 49 Outputs a list;
 #X text 12 29 Ranging from the base up to bass plus the rand max;
-#X obj 77 236 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 73 236 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
 #X floatatom 84 345 5 0 0 0 - - - 0;
-#X obj 77 259 randseq 8 60 60;
-#X obj 40 287 cycle 1 90 1;
+#X obj 73 259 randseq 8 60 60;
+#X obj 40 287 cycle 1 90;
 #X connect 0 0 20 0;
 #X connect 1 0 0 0;
 #X connect 1 0 13 0;

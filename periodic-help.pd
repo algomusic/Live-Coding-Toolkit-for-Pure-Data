@@ -1,27 +1,28 @@
-#N canvas 788 528 495 349 12;
-#X floatatom 191 118 5 0 15 0 - - - 0;
-#X floatatom 191 180 5 0 0 0 - - - 0;
-#X obj 189 32 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#N canvas 788 528 447 349 12;
+#X floatatom 154 120 5 0 15 0 - - - 0;
+#X floatatom 154 182 5 0 0 0 - - - 0;
+#X obj 152 34 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
-#X obj 191 147 periodic 16 60 24;
-#X floatatom 58 244 5 0 0 0 - - - 0;
+#X obj 154 149 periodic 16 60 24;
+#X floatatom 21 246 5 0 0 0 - - - 0;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array array1 16 float 3;
 #A 0 84.2 77.0935 59.9479 42.8328 35.8002 42.9804 60.1564 77.2405 84.2
 77.0935 59.9479 42.8328 35.8002 42.9804 60.1564 77.2405;
 #X coords 0 120 16 20 200 140 1 0 0;
-#X restore 257 189 graph;
-#X obj 58 277 array set array1;
-#X obj 112 246 mod 16;
-#X obj 58 211 periodic 8 1 0.2;
-#X text 311 95 range;
-#X text 259 95 centre;
-#X text 215 94 steps;
-#X msg 268 117 84;
-#X msg 307 117 12;
-#X msg 233 118 8;
-#X obj 189 59 tempo 140 0.5;
-#X text 9 4 Stepped simple harmonic motion;
+#X restore 220 191 graph;
+#X obj 21 279 array set array1;
+#X obj 75 248 mod 16;
+#X obj 21 213 periodic 8 1 0.2;
+#X text 274 97 range;
+#X text 222 97 centre;
+#X text 178 96 steps;
+#X msg 231 119 84;
+#X msg 270 119 12;
+#X msg 196 120 8;
+#X obj 152 61 tempo 140 0.5;
+#X text 18 7 Stepped simple harmonic motion;
+#X text 59 120 Count or bang;
 #X connect 0 0 3 0;
 #X connect 0 0 7 0;
 #X connect 0 0 8 0;

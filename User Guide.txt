@@ -13,7 +13,7 @@ tempo : BPM metronome
 
 cycle : phrase looper
 - arguments (pitch, velocity, duration)
-- inlets [trigger bangs, pitch list, velocity list, duration list, restart count]
+- inlets [trigger bangs or counter, pitch list, velocity list, duration list (ints >= 1), restart count]
 - outlets [next pitch, next velocity, next duration, beat count, pulse count]
 
 periodic : stepped simple harmonic motion

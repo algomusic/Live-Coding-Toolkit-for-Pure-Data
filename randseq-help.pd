@@ -1,23 +1,29 @@
-#N canvas 1128 219 340 363 12;
-#X obj 44 60 tempo 120 0.25;
-#X obj 44 35 tgl 15 0 empty empty Start 17 7 0 12 #fcfcfc #000000 #000000
+#N canvas 1128 219 399 450 12;
+#X obj 40 95 tempo 120 0.25;
+#X obj 40 70 tgl 15 0 empty empty Start 17 7 0 12 #fcfcfc #000000 #000000
 0 1;
-#X obj 44 203 quant 0 3 5 7 9;
-#X floatatom 44 234 5 0 0 0 - - - 0;
-#X obj 58 119 bng 15 250 50 0 empty empty Gen 17 7 0 10 #fcfcfc #000000
+#X obj 40 316 quant 0 3 5 7 9;
+#X floatatom 40 344 5 0 0 0 - - - 0;
+#X obj 58 154 bng 15 250 50 0 empty empty Gen 17 7 0 10 #fcfcfc #000000
 #000000;
-#X obj 207 127 bng 15 250 50 0 empty empty Send 17 7 0 10 #fcfcfc #000000
+#X obj 162 187 bng 15 250 50 0 empty empty Resend 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 40 287 cycle 1 0 1;
+#X text 11 11 Generate a random sequence of numbers;
+#X floatatom 78 184 5 0 100 2 Steps - - 0;
+#X floatatom 120 185 5 0 100000 2 Rand\ Max - - 0;
+#X floatatom 101 150 5 0 0 2 Base - - 0;
+#X floatatom 143 152 5 0 0 2 Expand\ (+-1.0) - - 0;
+#X obj 40 399 out~ 0.5;
+#X obj 40 369 synth~, f 11;
+#X obj 58 124 sel 1;
+#X obj 58 211 randseq 8 36 12;
+#X text 12 49 Outputs a list;
+#X text 12 29 Ranging from the base up to bass plus the rand max;
+#X obj 77 236 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
-#X obj 44 174 cycle 1 0 1;
-#X text 40 10 Generate a random sequence of numbers;
-#X floatatom 98 116 5 0 100 2 Steps - - 0;
-#X floatatom 184 93 5 0 100000 2 Rand\ Max - - 0;
-#X floatatom 137 93 5 0 0 2 Base - - 0;
-#X floatatom 251 92 5 0 100 2 Multiply - - 0;
-#X obj 44 303 out~ 0.5;
-#X obj 44 264 synth~, f 11;
-#X obj 56 84 sel 1;
-#X obj 58 142 randseq 8 36 12;
+#X floatatom 84 345 5 0 0 0 - - - 0;
+#X obj 77 259 randseq 8 60 60;
 #X connect 0 0 6 0;
 #X connect 1 0 0 0;
 #X connect 1 0 14 0;
@@ -26,6 +32,7 @@
 #X connect 4 0 15 0;
 #X connect 5 0 15 5;
 #X connect 6 0 2 0;
+#X connect 6 1 19 0;
 #X connect 8 0 15 1;
 #X connect 9 0 15 3;
 #X connect 10 0 15 2;
@@ -34,3 +41,6 @@
 #X connect 13 0 12 1;
 #X connect 14 0 4 0;
 #X connect 15 0 6 1;
+#X connect 18 0 20 0;
+#X connect 19 0 13 1;
+#X connect 20 0 6 2;

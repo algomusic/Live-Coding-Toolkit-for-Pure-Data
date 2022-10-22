@@ -10,17 +10,21 @@
 #X text 144 88 Inlet will prevent retriggering of sounding notes;
 #X text 143 17 Manages MIDI input and output in one place;
 #X text 145 43 Best to use for one or the other if adding args;
-#X text 179 153 inlets = Pitch Velocity Duration Channel CC Numb;
 #X text 146 68 CC Channel is ignored;
 #X floatatom 104 226 5 0 0 1 CC\ out - - 0;
 #X text 178 175 args = velocity \, duration \, channel \, CC numb;
 #X obj 27 194 midi 100 240 1 21;
 #X msg 47 87 loadbang;
+#X text 179 153 inlets = Pitch \, Velocity \, Duration \, Channel \,
+CC Numb;
+#X msg 93 166 reset;
+#X text 178 133 reset meaage - sends note-off to all pitches;
 #X connect 0 0 1 1;
-#X connect 1 0 13 0;
-#X connect 1 1 13 1;
+#X connect 1 0 12 0;
+#X connect 1 1 12 1;
 #X connect 2 0 4 0;
 #X connect 3 0 4 1;
 #X connect 4 0 1 0;
-#X connect 13 2 11 0;
-#X connect 14 0 0 0;
+#X connect 12 2 10 0;
+#X connect 13 0 0 0;
+#X connect 15 0 12 0;

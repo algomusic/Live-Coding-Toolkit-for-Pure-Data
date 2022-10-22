@@ -1,4 +1,4 @@
-#N canvas 621 507 368 257 12;
+#N canvas 627 573 368 257 12;
 #X obj 46 5 tgl 15 0 empty empty Start 17 7 0 12 #fcfcfc #000000 #000000
 0 1;
 #X floatatom 47 194 5 0 0 0 - - - 0;
@@ -6,7 +6,7 @@
 #000000;
 #X obj 47 162 cycle 60 100 4, f 16;
 #X floatatom 137 194 5 0 0 0 - - - 0;
-#X obj 156 137 bng 15 250 50 0 empty empty Reset 17 7 0 12 #fcfcfc
+#X obj 156 132 bng 15 250 50 0 empty empty Reset 17 7 0 12 #fcfcfc
 #000000 #000000;
 #X floatatom 91 194 5 0 0 0 - - - 0;
 #X msg 65 132 60 64;
@@ -22,19 +22,17 @@
 #X text 92 52 Velocity;
 #X text 56 95 Pitches;
 #X text 122 111 Dur;
-#X floatatom 157 108 5 0 0 1 Delay - - 0;
 #X text 56 112 0 = rest;
 #X obj 46 30 tempo 120 0.25;
-#X connect 0 0 22 0;
+#X connect 0 0 21 0;
 #X connect 3 0 1 0;
 #X connect 3 0 2 0;
 #X connect 3 1 6 0;
 #X connect 3 2 4 0;
 #X connect 3 3 13 0;
 #X connect 3 4 15 0;
-#X connect 5 0 3 5;
+#X connect 5 0 3 4;
 #X connect 7 0 3 1;
 #X connect 8 0 3 2;
 #X connect 12 0 3 3;
-#X connect 20 0 3 4;
-#X connect 22 0 3 0;
+#X connect 21 0 3 0;

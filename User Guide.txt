@@ -26,6 +26,11 @@ euclid : euclidean rhythm generator
 - inlets [bang or step, seq length, hits per seq, rotation]
 - outlet [step trigger]
 
+randchord : generate and store a randomised chord
+- arguments (numb of notes, min pitch, max pitch)
+- inlets [bang to generate new chord, numb of notes, min pitch, max pitch, scale pitch-class list, bang to send chord]
+- outlet [list of chord data]
+
 randseq : generate and store and randomised number sequence
 - arguments (numb of steps, random range, offset, multiply)
 - inlets [bang to generate seq, numb of steps, random range, offset, multiply, bang to send seq]

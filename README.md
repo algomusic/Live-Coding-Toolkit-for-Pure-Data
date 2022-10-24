@@ -29,7 +29,7 @@
  - gate~ : probabilistically let audio through or not
  - gain~ : stereo audio gain control with mute
  - panner~ : stereo audio panner
- - out~ : stereo audio output with reverb
+ - out~ : stereo audio output with level control and reverb
 
 A User Guide, Help files, and Examples are included.
 

@@ -9,7 +9,7 @@
  - periodic : stepped simple harmonic motion
  - euclid : euclidean rhythm generator
  - randchord : generate and store a randomised chord
- - randseq : generate and store and randomised number sequence
+ - randseq : generate and store a randomised number sequence
  - defer : schedule an event into the future by a number of beats
  - ramp : stepped transition between two values
  - rand : linear, gaussian and random walk

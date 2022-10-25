@@ -1,7 +1,7 @@
-#N canvas 803 306 379 403 12;
+#N canvas 803 306 456 403 12;
 #X obj 27 269 bng 15 250 50 0 empty empty Gen 5 -10 0 12 #fcfcfc #000000
 #000000;
-#X obj 144 262 bng 15 250 50 0 empty empty Send 8 -10 0 12 #fcfcfc
+#X obj 227 263 bng 15 250 50 0 empty empty Send 8 -10 0 12 #fcfcfc
 #000000 #000000;
 #X msg 75 124 0 2 4 7 9;
 #X obj 30 11 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
@@ -15,11 +15,11 @@
 #X obj 27 359 out~ 0.5;
 #X obj 170 36 loadbang;
 #X text 63 5 Generate a chord with random pitches;
-#X floatatom 50 161 5 0 0 2 Note\ Numb - - 0;
-#X floatatom 72 198 5 12 110 2 Min\ pitch - - 0;
-#X floatatom 96 238 5 12 127 2 Max\ pitch - - 0;
-#X text 121 313 args - noteNumb minPitch maxPitch;
-#X obj 27 292 randchord 4 60 12;
+#X floatatom 67 163 5 0 0 2 Note\ Numb - - 0;
+#X floatatom 107 199 5 12 110 2 Min\ pitch - - 0;
+#X floatatom 147 243 5 12 127 2 Max\ pitch - - 0;
+#X text 121 313 args - noteNumb minPitch maxPitch pitchSet;
+#X obj 27 292 randchord 4 60 12 0 2 4 5 7 9;
 #X connect 0 0 17 0;
 #X connect 1 0 17 5;
 #X connect 2 0 17 4;

@@ -1,24 +1,40 @@
-#N canvas 702 230 331 307 12;
-#X obj 110 238 hsl 50 15 0 1 0 0 empty empty Vol -2 -8 0 10 #fcfcfc
+#N canvas 702 230 356 319 12;
+#X obj 116 267 hsl 50 15 0 1 0 0 empty empty Vol -2 -8 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X obj 41 262 out~ 0.9;
-#X floatatom 234 216 5 0 0 2 voice\ end - - 0;
+#X floatatom 234 234 5 0 0 2 voice\ end - - 0;
 #X obj 41 13 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
 0 1;
 #X obj 41 133 quant 0 2 4 7 9;
 #X obj 41 175 polysample~ samples/C4EP.wav;
-#X obj 173 80 rand 80 30;
+#X obj 173 65 rand 80 30;
 #X obj 41 79 rand 60 5 48 72;
 #X obj 41 38 tempo 120 0.5;
 #X obj 41 107 gate 0.8;
+#X obj 41 219 lop~ 2000;
+#X obj 137 219 lop~ 2000;
+#X obj 206 113 mtof;
+#X floatatom 205 138 5 0 0 0 - - - 0;
+#X obj 250 193 line 0 1;
+#X msg 250 168 \$1 10;
+#X obj 206 90 + 5;
 #X connect 0 0 1 2;
 #X connect 3 0 8 0;
 #X connect 4 0 5 0;
-#X connect 5 0 1 0;
-#X connect 5 1 1 1;
+#X connect 5 0 10 0;
+#X connect 5 1 11 0;
 #X connect 5 2 2 0;
 #X connect 6 1 5 1;
+#X connect 6 1 16 0;
 #X connect 7 2 9 0;
-#X connect 8 0 6 0;
 #X connect 8 0 7 0;
+#X connect 8 0 6 0;
 #X connect 9 0 4 0;
+#X connect 10 0 1 0;
+#X connect 11 0 1 1;
+#X connect 12 0 13 0;
+#X connect 13 0 15 0;
+#X connect 14 0 11 1;
+#X connect 14 0 10 1;
+#X connect 15 0 14 0;
+#X connect 16 0 12 0;

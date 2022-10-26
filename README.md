@@ -31,6 +31,6 @@
  - panner~ : stereo audio panner
  - out~ : stereo audio output with level control and reverb
 
-A User Guide, Help files, and Examples are included.
+A User Guide, Help files, Examples, and test Audio Samples are included.
 
 Functions are based on live coding techniques outlined in Sorensen, Andrew & Brown, Andrew R. (2007) [aa-cell in practice: An approach to musical live coding.](https://eprints.qut.edu.au/39768/1/c39768.pdf) In: Proceedings of the International Computer Music Conference. pp. 292–299. ICMA, Copenhagen.

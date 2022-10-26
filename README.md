@@ -23,7 +23,7 @@
  - fm~ : simple 2-operator frequency modulation synth
  - polyfm~ : 8 voice version of fm~
  - drums~ : simple synthesized drum kit
- - sample~ : load and playback a mono audio file
+ - sample~ : load and playback a mono or stereo audio file
  - polysample~ : 8 voice version of sample~
  - echo~ : stereo audio feedback delay
  - gate~ : probabilistically let audio through or not

@@ -101,15 +101,15 @@ drums~ : simple synthesized drum kit
 - inlets [kick trigger, snare trigger, hats trigger, kick level (0-1), snare level, hats level]
 - outlet [mono audio signal]
 
-sample~ : load and playback a mono audio file
+sample~ : load and playback a mono or stereo audio file
 - arguments (filename, including path relative to abstraction)
 - inlets [trigger (pitch or bang), velocity, filename, playback speed (0-11 or 12-127), start position (0-1), end position (0-1), scrub pos (0-1)]
-- outlet [mono audio signal]
+- outlet [audio out left, audio out right, voice end]
 
-polysample~ : load and playback a mono audio file
+polysample~ : load and playback 8 voices of a mono or stereo audio file
 - arguments (filename, including path relative to abstraction)
 - inlets [trigger (pitch, pitch list or bang), velocity, filename, playback speed (0-11 or 12-127), start position (0-1), end position (0-1)]
-- outlet [audio out left, audio out right]
+- outlet [audio out left, audio out right, voice end]
 
 echo~ : stereo audio feedback delay
 - arguments delay-time, delay-level, feedback

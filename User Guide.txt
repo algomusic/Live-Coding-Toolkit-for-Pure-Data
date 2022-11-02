@@ -79,7 +79,7 @@ gate : probabilistically let data through or not
 synth~ : simple mono subtractive synth
 - arguments (filter cutoff, attack in ms, release in ms, glide in ms)
 - inlets [MIDI pitch, MIDI velocity, filter cutoff, attack in ms, release in ms, glide in ms]
-- outlet [mono audio signal]
+- outlet [mono audio signal, amplitude envelope level]
 
 polysynth~ : 8 voice version of synth
 - arguments (cutoff, attack in ms, release in ms)

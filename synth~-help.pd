@@ -9,6 +9,7 @@
 #X obj 46 281 synth~ 500;
 #X text 40 29 args = filter cutoff \, attack \, release \, glide;
 #X floatatom 113 254 5 0 10000 2 Glide\ (ms) - - 0;
+#X text 125 281 outlets - audio out \, amp env level;
 #X connect 0 0 7 0;
 #X connect 1 0 7 1;
 #X connect 2 0 7 2;

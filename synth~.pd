@@ -1,4 +1,4 @@
-#N canvas 1596 343 932 553 12;
+#N canvas 1344 191 932 553 12;
 #X obj 37 99 mtof;
 #X obj 36 476 *~;
 #X obj 261 254 vline~;
@@ -236,6 +236,12 @@
 #X obj 119 58 f 4;
 #X msg 823 96 10;
 #X obj 243 66 clip 0 127;
+#X obj 371 504 outlet;
+#X obj 369 472 snapshot~;
+#X obj 378 421 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 378 445 metro 10;
+#X obj 403 416 loadbang;
 #X connect 0 0 73 0;
 #X connect 1 0 9 0;
 #X connect 1 0 35 0;
@@ -293,6 +299,7 @@
 #X connect 57 0 2 0;
 #X connect 58 0 52 0;
 #X connect 58 0 1 1;
+#X connect 58 0 94 0;
 #X connect 59 0 60 0;
 #X connect 60 0 8 0;
 #X connect 60 0 61 0;
@@ -330,3 +337,7 @@
 #X connect 90 0 87 0;
 #X connect 91 0 78 0;
 #X connect 92 0 3 0;
+#X connect 94 0 93 0;
+#X connect 95 0 96 0;
+#X connect 96 0 94 0;
+#X connect 97 0 95 0;

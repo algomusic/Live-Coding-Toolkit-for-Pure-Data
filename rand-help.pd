@@ -30,6 +30,7 @@
 #X text 396 55 Start-Dev-Min-Max;
 #X text 163 54 Centre-Dev;
 #X obj 140 76 rand 5 5;
+#X text 53 140 inlets - trig \, centre \, dev \, min \, max;
 #X connect 0 0 2 0;
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;

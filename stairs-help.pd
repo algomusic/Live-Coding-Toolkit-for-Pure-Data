@@ -1,0 +1,21 @@
+#N canvas 946 735 347 322 12;
+#X floatatom 87 113 5 0 0 2 start_val - - 0;
+#X floatatom 103 152 5 0 0 2 end_val - - 0;
+#X floatatom 55 24 5 0 0 2 Step - - 0;
+#X obj 136 228 bng 15 250 50 0 empty empty Reset 0 -10 0 12 #fcfcfc
+#000000 #000000;
+#X obj 55 252 ramp 16 0 10;
+#X floatatom 55 285 5 0 0 0 - - - 0;
+#X floatatom 71 75 5 0 100 2 Number_of_Steps - - 0;
+#X obj 11 24 bng 15 250 50 0 empty empty Inc 0 -10 0 12 #fcfcfc #000000
+#000000;
+#X text 29 22 or;
+#X floatatom 119 188 5 0 0 2 power - - 0;
+#X connect 0 0 4 2;
+#X connect 1 0 4 3;
+#X connect 2 0 4 0;
+#X connect 3 0 4 5;
+#X connect 4 0 5 0;
+#X connect 6 0 4 1;
+#X connect 7 0 4 0;
+#X connect 9 0 4 4;

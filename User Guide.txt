@@ -41,10 +41,15 @@ defer : schedule an event into the future by a number of beats
 - inlets [data, bpm, number of beats to wait]
 - outlet [delayed data]
 
-ramp : stepped transition between two values
+stairs : stepped transition between two values
 - arguments (numb of steps, start value, end value, curve)
 - inlets [step, numb of steps, start value, end value, curve, reset]
 - outlet [next value, bang on last step]
+
+ramp : smooth transition to a new value
+- arguments (end value, duration)
+- inlets [end value, duration]
+- outlet [value]
 
 rand : linear, gaussian and random walk
 - arguments (centre, deviation, upper limit, lower limit)

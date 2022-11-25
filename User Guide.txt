@@ -19,7 +19,7 @@ cycle : phrase looper
 periodic : stepped simple harmonic motion
 - arguments (numb of steps, centre value, range)
 - inlets [step, numb of steps, centre value, range]
-- outlet [next value]
+- outlet [next value, glide to next value]
 
 euclid : euclidean rhythm generator
 - arguments (seq length, hits per seq, rotation)
@@ -87,8 +87,8 @@ polysynth~ : 8 voice version of synth
 - outlet [audio out left, audio out right]
 
 fm~ : simple 2-operator frequency modulation synth
-- arguments (mod index, C:M ratio, attack in ms, release in ms)
-- inlets [MIDI pitch, MIDI velocity, modulation index, carrier:modulator ratio, attack in ms, release in ms]
+- arguments (mod index, C:M ratio, attack in ms, release in ms, glide in ms)
+- inlets [MIDI pitch, MIDI velocity, modulation index, carrier:modulator ratio, attack in ms, release in ms, glide in ms]
 - outlet [mono audio signal]
 
 polyfm~ : 8 voice version of fm
@@ -132,6 +132,6 @@ panner~ : stereo audio panner
 - outlets [audio out left, audio out right]
 
 out~ : stereo audio output with reverb
-- arguments (volume)
+- arguments (volume 0-1, reverb level 0-100)
 - inlets (audio input left, audio input right, volume level from 0.0 to 1.0, reverb amount from 0 to 100)
 - outlets [none]

@@ -1,5 +1,4 @@
-#N canvas 1245 173 508 324 12;
-#X obj 135 277 out~ 0.1;
+#N canvas 1245 173 508 360 12;
 #X msg 181 65 samples/hello.wav;
 #X obj 136 102 bng 15 250 50 0 empty empty empty 17 7 0 10 #c6ffc7
 #000000 #000000;
@@ -9,27 +8,30 @@
 #X obj 18 37 tempo 130 0.5;
 #X obj 17 98 quant 0 2 4 7 9;
 #X obj 17 68 rand 60 5 12 100;
-#X floatatom 222 110 5 0 127 2 Speed\ (0.1-11.9\ &\ 12\ -\ 127) - -
+#X floatatom 222 136 5 0 127 2 Speed\ (0.1-11.9\ &\ 12\ -\ 127) - -
 0;
-#X floatatom 250 147 5 0 1 2 Start\ Pos\ (0-1) - - 0;
-#X floatatom 279 182 5 0 1 2 End\ Pos\ (0-1) - - 0;
-#X obj 311 217 hsl 100 15 0 1 0 0 empty empty Scrub\\\ (0-1) -2 -8
+#X floatatom 250 173 5 0 1 2 Start\ Pos\ (0-1) - - 0;
+#X floatatom 279 208 5 0 1 2 End\ Pos\ (0-1) - - 0;
+#X obj 311 243 hsl 100 15 0 1 0 0 empty empty Scrub\\\ (0-1) -2 -8
 0 10 #fcfcfc #000000 #000000 0 1;
-#X floatatom 164 207 5 0 127 2 Vel\ (0-127) - - 0;
-#X text 264 108 Either 1 or 60 is normal speed;
+#X floatatom 164 233 5 0 127 2 Vel\ (0-127) - - 0;
+#X text 264 134 Either 1 or 60 is normal speed;
 #X text 81 8 load and playback a mono or stereo sample;
-#X obj 136 238 sample~ samples/hello.wav;
-#X connect 1 0 15 2;
-#X connect 2 0 15 0;
-#X connect 3 0 15 2;
-#X connect 4 0 5 0;
-#X connect 5 0 7 0;
-#X connect 6 0 15 0;
-#X connect 7 2 6 0;
-#X connect 8 0 15 3;
-#X connect 9 0 15 4;
-#X connect 10 0 15 5;
-#X connect 11 0 15 6;
-#X connect 12 0 15 1;
-#X connect 15 0 0 0;
-#X connect 15 1 0 1;
+#X obj 136 264 sample~ samples/hello.wav;
+#X obj 135 303 out~ 0.5;
+#X msg 217 90 samples/Birds.wav;
+#X connect 0 0 14 2;
+#X connect 1 0 14 0;
+#X connect 2 0 14 2;
+#X connect 3 0 4 0;
+#X connect 4 0 6 0;
+#X connect 5 0 14 0;
+#X connect 6 2 5 0;
+#X connect 7 0 14 3;
+#X connect 8 0 14 4;
+#X connect 9 0 14 5;
+#X connect 10 0 14 6;
+#X connect 11 0 14 1;
+#X connect 14 0 15 0;
+#X connect 14 1 15 1;
+#X connect 16 0 14 2;

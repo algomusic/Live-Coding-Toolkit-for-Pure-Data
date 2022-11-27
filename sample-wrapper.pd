@@ -119,14 +119,15 @@
 #X obj 143 30 unpack f f f f f f f f f f;
 #X obj 542 833 f;
 #X text 548 871 Voice Numb at end;
+#X floatatom 588 713 5 0 0 0 - - - 0;
 #X connect 0 0 20 0;
 #X connect 0 0 61 0;
 #X connect 1 0 5 0;
+#X connect 1 0 77 0;
 #X connect 2 0 11 0;
 #X connect 3 0 0 0;
 #X connect 4 0 0 0;
 #X connect 5 0 11 2;
-#X connect 5 0 70 1;
 #X connect 6 0 5 1;
 #X connect 7 0 8 0;
 #X connect 8 0 1 0;
@@ -221,3 +222,4 @@
 #X connect 74 8 59 0;
 #X connect 74 9 73 0;
 #X connect 75 0 72 0;
+#X connect 77 0 70 1;

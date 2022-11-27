@@ -16,9 +16,9 @@
 #X obj 120 162 + 1;
 #X obj 85 186 t b f;
 #X obj 77 259 list split 1;
-#X obj 83 63 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X floatatom 135 88 5 0 0 0 - - -;
+#X obj 83 63 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X floatatom 135 88 5 0 0 0 - - - 0;
 #X msg 132 136 0;
 #X obj 85 88 t b b;
 #X obj 43 229 list split 0;
@@ -31,7 +31,7 @@
 #X text 19 4 Compare number to those in a list - return boolean result
 ;
 #X text 213 419 Andrew R. Brown - byron bay \, 2017;
-#X msg 228 204 0 7 0 0 0 0 0 0 0 0 0 0;
+#X msg 228 204 0 2 4 5 7 9 0 0 0 0 0 0;
 #X connect 0 0 22 0;
 #X connect 1 0 4 0;
 #X connect 1 0 6 0;
@@ -63,17 +63,17 @@
 #X connect 23 0 18 1;
 #X connect 26 0 17 0;
 #X restore 18 196 pd list-contains;
-#X floatatom 18 82 5 0 0 0 - - -;
+#X floatatom 18 82 5 0 0 0 - - - 0;
 #X obj 18 218 sel 1;
-#X obj 18 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 51 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 18 243 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 51 244 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
 #X obj 18 170 % 12;
 #X obj 18 108 f;
 #X obj 49 109 - 1;
 #X obj 59 270 f;
-#X floatatom 59 293 5 0 0 0 - - -;
+#X floatatom 59 293 5 0 0 0 - - - 0;
 #X obj 18 134 t f f;
 #X text 117 77 test;
 #X text 15 7 Quantise a number to a list of numbers (range within 0-12)
@@ -81,7 +81,7 @@
 #N canvas 447 145 413 622 list-modulo 0;
 #X obj 195 11 inlet list;
 #X obj 228 97 list trim;
-#X msg 229 196 0 7 0 0 0 0 0 0 0 0 0 0;
+#X msg 229 196 0 2 4 5 7 9 0 0 0 0 0 0;
 #X obj 228 71 list prepend set;
 #X text 230 217 List;
 #X obj 121 71 list length;
@@ -90,18 +90,18 @@
 #X obj 104 171 f;
 #X obj 139 171 + 1;
 #X obj 103 193 t b f;
-#X obj 81 72 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X floatatom 167 98 5 0 0 0 - - -;
+#X obj 81 72 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X floatatom 167 98 5 0 0 0 - - - 0;
 #X msg 151 145 0;
 #X obj 55 225 list split 0;
 #X obj 48 558 outlet new-list;
 #X obj 196 34 t b l;
 #X obj 95 364 list trim;
 #X obj 95 337 list prepend set;
-#X msg 95 434 0 7 0 0 0 0 0 0 0 0 0 0;
-#X obj 205 241 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X msg 95 434 0 2 4 5 7 9 0 0 0 0 0 0;
+#X obj 205 241 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X msg 168 279 bang;
 #X text 206 280 empty list;
 #X obj 81 97 t b b b;
@@ -112,8 +112,8 @@
 #X obj 49 529 list trim;
 #X obj 49 502 list prepend set;
 #X obj 95 283 % 12;
-#X obj 318 152 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 318 152 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X obj 95 390 t b a;
 #X obj 95 311 list prepend;
 #X obj 95 247 list split 1;
@@ -161,10 +161,10 @@
 #X connect 33 0 18 0;
 #X connect 34 0 30 0;
 #X restore 127 104 pd list-modulo;
-#X msg 127 174 0 7 0 0 0 0 0 0 0 0 0 0;
+#X msg 127 174 0 2 4 5 7 9 0 0 0 0 0 0;
 #X msg 157 77 60 62 64 65 67;
-#X obj 127 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 127 151 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X obj 127 127 t b a;
 #X obj 250 52 loadbang;
 #X obj 270 107 f \$1;
@@ -182,7 +182,7 @@
 #X text 11 342 Andrew R. Brown \, byron bay \, 2017 \, updated 2021
 ;
 #X obj 272 211 pack 0 0 0 0 0 0 0 0 0 0 0 0;
-#X msg 259 289 0 7 0 0 0 0 0 0 0 0 0 0;
+#X msg 259 289 0 2 4 5 7 9 0 0 0 0 0 0;
 #X msg 177 244 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
 ;
 #X obj 18 60 int;

@@ -11,7 +11,8 @@
  - randchord : generate and store a randomised chord
  - randseq : generate and store a randomised number sequence
  - defer : schedule an event into the future by a number of beats
- - ramp : stepped transition between two values
+ - stairs : stepped transition between two values
+ - ramp : smooth transition to the next value
  - rand : linear, gaussian and random walk
  - direct : pass input values to a specified outlet
  - quant : pitch class quanitze

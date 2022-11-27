@@ -1,28 +1,28 @@
-#N canvas 530 651 514 386 12;
-#X obj 29 38 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
-;
+#N canvas 1233 618 514 386 12;
+#X obj 29 38 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
 #X obj 29 58 metro 0.25 120 permin;
 #X obj 29 82 cycle, f 10;
 #X obj 27 183 mod 4;
 #X obj 27 212 sel 3;
-#X obj 29 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 29 151 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
 #X obj 111 183 random 10;
-#X obj 111 161 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 111 161 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X msg 111 241 0;
 #X obj 111 210 sel 0 2;
 #X msg 27 239 1;
 #X msg 146 241 2;
-#X obj 215 159 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 215 159 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X obj 118 301 s next;
 #X obj 215 185 f;
 #X obj 249 186 + 1;
 #X obj 215 214 sel 7;
 #X msg 215 242 1;
 #X msg 233 159 0;
-#X floatatom 266 215 5 0 0 0 - - -;
+#X floatatom 266 215 5 0 0 0 - - - 0;
 #X text 31 325 Node rules determine when and where;
 #X obj 96 110 direct;
 #X obj 135 31 r next;
@@ -30,7 +30,15 @@
 #X text 190 34 Select the outlet \, either 0 \, 1 \, 2 \, or 3;
 #X text 152 106 Direct inlet to one of up to four outlets (0-3);
 #X text 27 6 Pass on values to a selected outlet;
-#X floatatom 151 85 5 0 0 0 - - -;
+#X floatatom 151 85 5 0 0 0 - - - 0;
+#X obj 363 211 direct;
+#X floatatom 363 176 5 0 0 2 Data - - 0;
+#X floatatom 402 176 5 0 3 2 Outlet - - 0;
+#X floatatom 363 252 5 0 0 0 - - - 0;
+#X floatatom 376 276 5 0 0 0 - - - 0;
+#X floatatom 389 302 5 0 0 0 - - - 0;
+#X floatatom 402 327 5 0 0 0 - - - 0;
+#X text 358 140 Similified Example;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 4 21 0;
@@ -58,3 +66,9 @@
 #X connect 21 2 12 0;
 #X connect 22 0 21 1;
 #X connect 27 0 21 1;
+#X connect 28 0 31 0;
+#X connect 28 1 32 0;
+#X connect 28 2 33 0;
+#X connect 28 3 34 0;
+#X connect 29 0 28 0;
+#X connect 30 0 28 1;

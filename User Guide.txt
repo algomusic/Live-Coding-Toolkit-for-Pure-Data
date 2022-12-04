@@ -24,7 +24,7 @@ periodic : stepped simple harmonic motion
 euclid : euclidean rhythm generator
 - arguments (seq length, hits per seq, rotation)
 - inlets [bang or step, seq length, hits per seq, rotation]
-- outlet [step trigger]
+- outlet [bang, step number]
 
 randchord : generate and store a randomised chord
 - arguments (numb of notes, central pitch, max pitch deviation, pitch-class vals)

@@ -35,14 +35,14 @@
 #X floatatom 381 76 5 0 0 0 - - - 0;
 #X floatatom 430 75 5 0 0 0 - - - 0;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array \$0-pitches 1 float 2;
-#X coords 0 127 1 0 100 64 1 0 0;
+#X array \$0-pitches 4 float 2;
+#X coords 0 127 4 0 100 64 1 0 0;
 #X restore 480 397 graph;
 #X obj 476 238 array set \$0-velocities;
 #X obj 307 239 array set \$0-pitches;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array \$0-durations 7 float 2;
-#X coords 0 16 7 0 100 64 1 0 0;
+#X array \$0-durations 1 float 2;
+#X coords 0 16 1 0 100 64 1 0 0;
 #X restore 769 398 graph;
 #X text 613 18 duration list;
 #X obj 684 53 inlet;
@@ -179,5 +179,6 @@
 #X connect 83 0 84 0;
 #X connect 84 0 75 0;
 #X connect 84 1 85 0;
+#X connect 84 1 8 1;
 #X connect 85 0 87 0;
 #X connect 87 0 86 0;

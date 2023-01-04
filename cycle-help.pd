@@ -20,11 +20,10 @@
 #X floatatom 270 194 5 0 0 0 - - - 0;
 #X text 266 220 Pulse count;
 #X text 92 52 Velocity;
-#X text 56 95 Pitches;
+#X text 61 109 Pitches;
 #X text 122 111 Dur;
-#X text 56 112 0 = rest;
 #X obj 46 30 tempo 120 0.25;
-#X connect 0 0 21 0;
+#X connect 0 0 20 0;
 #X connect 3 0 1 0;
 #X connect 3 0 2 0;
 #X connect 3 1 6 0;
@@ -35,4 +34,4 @@
 #X connect 7 0 3 1;
 #X connect 8 0 3 2;
 #X connect 12 0 3 3;
-#X connect 21 0 3 0;
+#X connect 20 0 3 0;

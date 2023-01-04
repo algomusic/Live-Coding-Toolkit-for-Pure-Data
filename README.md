@@ -14,8 +14,10 @@
  - stairs : stepped transition between two values
  - ramp : smooth transition to the next value
  - rand : linear, gaussian and random walk
+ - modrand : make a random selection at each modulo cycle
  - direct : pass input values to a specified outlet
  - quant : pitch class quanitze
+ - trans : transpose a number of list of numbers
  - midi : MIDI note output and MIDI note and control change input
  - map : scales data from one range to another
  - gate : probabilistically let data through or not

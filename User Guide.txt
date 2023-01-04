@@ -56,6 +56,11 @@ rand : linear, gaussian and random walk
 - inlets [trigger bang, centre/start value, deviation value, lower limit, upper limit]
 - outlets [linear distribution, gaussian distribution, random walk]
 
+modrand : make a random selection at each modulo cycle
+- arguments (modulo value, maximum random value from 1 to 4)
+- inlets [step number, modulo value, maximum random value]
+- outlets [bang from up to four outlets]
+
 direct : pass input values to a specified outlet
 - arguments (outlet number from 0 to 3)
 - inlets [value, outlet number from 0 to 3]
@@ -65,6 +70,11 @@ quant : pitch class quanitze
 - arguments (list of up to 11 MIDI pitch numbers ranged from 0-11)
 - inlets [MIDI pitch to quantize, pitch class list]
 - outlet [quantised MIDI pitch]
+
+trans : transpose a number of list of numbers
+- arguments (transpose amount, allowable pitch classes with values from 0-11)
+- inlets [value (number or list), transpose amount, pitch class list (scale)]
+- outlet [transposed value (number or list)]
 
 midi : MIDI note send and note and control change receive
 - arguments (MIDI send velocity, send duration in ms, MIDI send channel from 1 to 16, receive control change number)

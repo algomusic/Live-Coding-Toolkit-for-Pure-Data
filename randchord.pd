@@ -1,4 +1,4 @@
-#N canvas 924 503 756 519 12;
+#N canvas 1197 510 756 519 12;
 #X obj 94 233 f;
 #X obj 129 233 + 1;
 #X obj 43 206 t b b;
@@ -8,7 +8,7 @@
 #X obj 131 176 array size \$0-array;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-array 3 float 3;
-#A 0 78 81 75;
+#A 0 60 60 55;
 #X coords 0 127 3 0 200 64 1 0 0;
 #X restore 295 426 graph;
 #X obj 419 57 max 0;
@@ -56,7 +56,7 @@
 #X obj 577 190 f \$13;
 #X obj 621 188 f \$14;
 #X obj 669 187 f \$15;
-#X msg 319 339 0 2 3 5 6 8 10 0 0 0 0 0;
+#X msg 319 339 0 4 7 0 0 0 0 0 0 0 0 0;
 #X obj 374 253 t a b;
 #X floatatom 485 166 5 0 0 0 - - - 0;
 #N canvas 150 175 235 216 accum 0;
@@ -132,6 +132,7 @@
 #X connect 35 0 48 0;
 #X connect 35 0 49 0;
 #X connect 35 0 38 0;
+#X connect 35 0 50 0;
 #X connect 36 0 51 0;
 #X connect 37 0 50 0;
 #X connect 38 0 36 0;

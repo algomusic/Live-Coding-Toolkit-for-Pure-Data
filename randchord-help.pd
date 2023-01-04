@@ -16,11 +16,12 @@
 #X obj 170 36 loadbang;
 #X text 63 5 Generate a chord with random pitches;
 #X floatatom 67 163 5 0 0 2 Note\ Numb - - 0;
-#X floatatom 107 199 5 12 110 2 Min\ pitch - - 0;
-#X floatatom 147 243 5 12 127 2 Max\ pitch - - 0;
+#X floatatom 107 199 5 12 110 2 Central\ pitch - - 0;
+#X floatatom 147 243 5 12 127 2 Pitch\ range - - 0;
 #X obj 27 292 randchord 4 60 12 0 2 4 5 7 9;
 #X text 40 319 args - noteNumb centralPitch pitchDeviation pitchSet
 ;
+#X text 151 125 Scale (pitchSet);
 #X connect 0 0 16 0;
 #X connect 1 0 16 5;
 #X connect 2 0 16 4;

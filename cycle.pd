@@ -1,4 +1,4 @@
-#N canvas 1570 350 923 644 12;
+#N canvas 1637 434 923 644 12;
 #X obj 75 562 outlet;
 #X obj 181 568 outlet;
 #X text 74 589 pitch;
@@ -71,7 +71,7 @@
 #X floatatom 162 294 5 0 0 0 - - - 0;
 #X obj 120 234 r \$0-reset;
 #X msg 823 75 0;
-#X obj 184 85 f;
+#X obj 161 68 f;
 #X obj 212 17 r \$0-reset;
 #X obj 184 41 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
@@ -94,9 +94,11 @@
 #X obj 45 45 route float bang;
 #X floatatom 45 71 5 0 0 0 - - - 0;
 #X obj 45 96 t b f;
-#X obj 44 123 sel 0;
-#X obj 22 184 s \$0-reset;
-#X msg 22 155 0;
+#X obj 10 186 sel 0;
+#X obj 10 234 s \$0-reset;
+#X msg 11 209 0;
+#X obj 15 124 mod 16;
+#X obj 38 158 sel 0;
 #X connect 5 0 14 0;
 #X connect 6 0 18 0;
 #X connect 8 0 9 0;
@@ -136,6 +138,7 @@
 #X connect 43 0 51 0;
 #X connect 43 0 62 1;
 #X connect 43 0 78 1;
+#X connect 43 0 86 1;
 #X connect 44 0 42 0;
 #X connect 47 0 27 0;
 #X connect 48 0 28 0;
@@ -176,5 +179,8 @@
 #X connect 81 0 82 0;
 #X connect 82 0 73 0;
 #X connect 82 1 83 0;
+#X connect 82 1 86 0;
 #X connect 83 0 85 0;
 #X connect 85 0 84 0;
+#X connect 86 0 87 0;
+#X connect 87 0 64 0;

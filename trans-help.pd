@@ -1,0 +1,19 @@
+#N canvas 1180 738 491 253 12;
+#X msg 87 107 1 2 3 4;
+#X obj 86 218 print trans-out;
+#X floatatom 40 107 5 0 0 0 - - - 0;
+#X floatatom 113 149 5 0 0 2 Transpose\ amount - - 0;
+#X obj 87 177 trans 10;
+#X text 42 14 Transpose (increment) the input value(s);
+#X text 43 58 Will transpose either a number or a list of numbers;
+#X text 42 31 by the transpose amount constrained to the pitch set
+;
+#X text 42 81 The default pitch set is chromatic;
+#X text 162 178 Agument: Transpose amount \, pitch set values;
+#X msg 167 150 0 2 4 5 7 9 11;
+#X text 282 150 Pitch set (scale);
+#X connect 0 0 4 0;
+#X connect 2 0 4 0;
+#X connect 3 0 4 1;
+#X connect 4 0 1 0;
+#X connect 10 0 4 2;

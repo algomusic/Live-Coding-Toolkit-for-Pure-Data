@@ -1,4 +1,4 @@
-#N canvas 1679 361 610 572 12;
+#N canvas 1679 361 631 572 12;
 #X floatatom 177 195 5 0 100 2 Bar_len - - 0;
 #X obj 54 287 +;
 #X floatatom 295 196 5 0 100 2 Hits_per_bar - - 0;
@@ -36,7 +36,7 @@
 #X msg 72 140 0;
 #X obj 54 62 route bang float;
 #X obj 498 17 inlet reset;
-#X obj 498 53 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 496 95 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
 #X floatatom 95 231 5 0 0 0 - - - 0;
 #X obj 68 92 max 0;
@@ -45,6 +45,7 @@
 #X floatatom 118 387 5 0 0 0 - - - 0;
 #X obj 54 388 < 1;
 #X obj 394 124 max 0;
+#X obj 488 45 r lct-cycle-reset;
 #X connect 0 0 9 1;
 #X connect 0 0 10 1;
 #X connect 1 0 17 0;
@@ -92,3 +93,4 @@
 #X connect 39 1 7 0;
 #X connect 41 0 4 0;
 #X connect 42 0 28 0;
+#X connect 43 0 35 0;

@@ -1,4 +1,4 @@
-#N canvas 1351 359 280 391 12;
+#N canvas 1351 359 395 387 12;
 #X obj 74 54 tempo 94 0.25;
 #X obj 74 30 tgl 15 0 empty empty empty 17 7 0 10 #c6ffc7 #000000 #000000
 0 1;
@@ -18,6 +18,11 @@
 #X text 109 181 Bang out;
 #X floatatom 191 190 5 0 0 0 - - - 0;
 #X text 190 210 Step out;
+#X obj 175 342 s lct-cycle-reset;
+#X obj 175 316 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X text 171 269 Send reset to align;
+#X text 172 289 all euclid and cycle objects;
 #X connect 0 0 2 0;
 #X connect 0 1 9 0;
 #X connect 1 0 0 0;
@@ -31,3 +36,4 @@
 #X connect 9 1 15 0;
 #X connect 11 0 9 1;
 #X connect 12 0 9 3;
+#X connect 18 0 17 0;

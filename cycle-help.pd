@@ -1,4 +1,4 @@
-#N canvas 627 573 368 257 12;
+#N canvas 869 566 368 257 12;
 #X obj 46 5 tgl 15 0 empty empty Start 17 7 0 12 #fcfcfc #000000 #000000
 0 1;
 #X floatatom 47 194 5 0 0 0 - - - 0;
@@ -23,6 +23,11 @@
 #X text 61 109 Pitches;
 #X text 122 111 Dur;
 #X obj 46 30 tempo 120 0.25;
+#X obj 224 127 s lct-cycle-reset;
+#X obj 224 101 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X text 214 56 Send reset to align;
+#X text 213 75 all cycle objects;
 #X connect 0 0 20 0;
 #X connect 3 0 1 0;
 #X connect 3 0 2 0;
@@ -35,3 +40,4 @@
 #X connect 8 0 3 2;
 #X connect 12 0 3 3;
 #X connect 20 0 3 0;
+#X connect 22 0 21 0;

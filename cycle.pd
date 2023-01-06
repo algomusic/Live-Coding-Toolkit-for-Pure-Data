@@ -27,7 +27,7 @@
 #X obj 99 238 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
 #X obj 823 43 inlet;
-#X obj 823 106 s \$0-reset;
+#X obj 825 131 s \$0-reset;
 #X obj 392 14 loadbang;
 #X text 471 11 velocity list;
 #X floatatom 381 76 5 0 0 0 - - - 0;
@@ -70,7 +70,7 @@
 #X obj 75 392 array get \$0-pitches \$1 1;
 #X floatatom 162 294 5 0 0 0 - - - 0;
 #X obj 120 234 r \$0-reset;
-#X msg 823 75 0;
+#X msg 825 100 0;
 #X obj 161 68 f;
 #X obj 212 17 r \$0-reset;
 #X obj 184 41 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
@@ -97,6 +97,9 @@
 #X obj 11 242 s \$0-reset;
 #X msg 11 209 0;
 #X obj 45 96 t b f;
+#X obj 16 150 sel 0;
+#X obj 11 124 mod 16;
+#X obj 762 69 r lct-cycle-reset;
 #X connect 5 0 14 0;
 #X connect 6 0 18 0;
 #X connect 8 0 9 0;
@@ -178,3 +181,6 @@
 #X connect 84 0 83 0;
 #X connect 85 0 73 0;
 #X connect 85 1 82 0;
+#X connect 85 1 87 0;
+#X connect 87 0 86 0;
+#X connect 88 0 61 0;

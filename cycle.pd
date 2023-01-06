@@ -1,4 +1,4 @@
-#N canvas 1637 434 923 644 12;
+#N canvas 1311 141 923 644 12;
 #X obj 75 562 outlet;
 #X obj 181 568 outlet;
 #X text 74 589 pitch;
@@ -33,14 +33,14 @@
 #X floatatom 381 76 5 0 0 0 - - - 0;
 #X floatatom 430 75 5 0 0 0 - - - 0;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array \$0-pitches 4 float 2;
-#X coords 0 127 4 0 100 64 1 0 0;
+#X array \$0-pitches 1 float 2;
+#X coords 0 127 1 0 100 64 1 0 0;
 #X restore 480 397 graph;
 #X obj 476 238 array set \$0-velocities;
 #X obj 307 239 array set \$0-pitches;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array \$0-durations 1 float 2;
-#X coords 0 16 1 0 100 64 1 0 0;
+#X array \$0-durations 4 float 2;
+#X coords 0 16 4 0 100 64 1 0 0;
 #X restore 769 398 graph;
 #X text 613 18 duration list;
 #X obj 684 53 inlet;
@@ -82,7 +82,7 @@
 #X obj 266 503 max 1;
 #X obj 266 479 int;
 #X text 419 600 pulse cnt;
-#X obj 99 21 inlet;
+#X obj 98 11 inlet;
 #X obj 99 72 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
 #X obj 99 96 f;
@@ -90,15 +90,13 @@
 #X floatatom 99 125 5 0 0 0 - - - 0;
 #X msg 116 179 1;
 #X obj 99 153 sel 4;
-#X text 53 20 bang;
-#X obj 45 45 route float bang;
+#X text 52 10 bang;
+#X obj 44 35 route float bang;
 #X floatatom 45 71 5 0 0 0 - - - 0;
-#X obj 45 96 t b f;
 #X obj 10 186 sel 0;
-#X obj 10 234 s \$0-reset;
+#X obj 11 242 s \$0-reset;
 #X msg 11 209 0;
-#X obj 15 124 mod 16;
-#X obj 38 158 sel 0;
+#X obj 45 96 t b f;
 #X connect 5 0 14 0;
 #X connect 6 0 18 0;
 #X connect 8 0 9 0;
@@ -138,7 +136,6 @@
 #X connect 43 0 51 0;
 #X connect 43 0 62 1;
 #X connect 43 0 78 1;
-#X connect 43 0 86 1;
 #X connect 44 0 42 0;
 #X connect 47 0 27 0;
 #X connect 48 0 28 0;
@@ -176,11 +173,8 @@
 #X connect 78 0 22 0;
 #X connect 80 0 81 0;
 #X connect 80 1 73 0;
-#X connect 81 0 82 0;
-#X connect 82 0 73 0;
-#X connect 82 1 83 0;
-#X connect 82 1 86 0;
-#X connect 83 0 85 0;
-#X connect 85 0 84 0;
-#X connect 86 0 87 0;
-#X connect 87 0 64 0;
+#X connect 81 0 85 0;
+#X connect 82 0 84 0;
+#X connect 84 0 83 0;
+#X connect 85 0 73 0;
+#X connect 85 1 82 0;

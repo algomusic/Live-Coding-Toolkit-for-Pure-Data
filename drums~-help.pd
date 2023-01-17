@@ -1,4 +1,4 @@
-#N canvas 1195 761 307 258 12;
+#N canvas 1195 761 322 264 12;
 #X obj 62 32 bng 15 250 50 0 empty empty Kick 17 7 0 10 #fcfcfc #000000
 #000000;
 #X obj 74 54 bng 15 250 50 0 empty empty Snare 17 7 0 10 #fcfcfc #000000
@@ -11,6 +11,9 @@
 #X text 51 7 Simple synthesized drum kit;
 #X obj 63 210 out~ 0.1;
 #X obj 62 167 drums~, f 9;
+#X text 145 168 Args: kick level \,;
+#X text 189 187 snare level \,;
+#X text 190 209 hats level;
 #X connect 0 0 8 0;
 #X connect 1 0 8 1;
 #X connect 2 0 8 2;

@@ -38,6 +38,6 @@ A User Guide, Help files, Examples, and test Audio Samples are included.
 
 A series of [tutorial videos](https://www.youtube.com/playlist?list=PLuxj2jXSuTvt2P4TLVdnhHy2hnHNUMTqO) for the Live Coding Toolkit are available. 
 
-Functions are based on live coding techniques outlined in Sorensen, Andrew & Brown, Andrew R. (2007) [aa-cell in practice: An approach to musical live coding.](https://eprints.qut.edu.au/39768/1/c39768.pdf) In: Proceedings of the International Computer Music Conference. pp. 292–299. ICMA, Copenhagen.
+Functions are based on live coding techniques outlined in: Sorensen, Andrew & Brown, Andrew R. (2007) [aa-cell in practice: An approach to musical live coding.](https://eprints.qut.edu.au/39768/1/c39768.pdf) In: Proceedings of the International Computer Music Conference. pp. 292–299. ICMA, Copenhagen.
 
-An overview of the LCT and its use of live coding design patterns has been published in, Brown, Andrew R. (2023) [Live Coding Patterns and a Toolkit for Pure Data.](https://www.cambridge.org/core/journals/organised-sound/article/abs/live-coding-patterns-and-a-toolkit-for-pure-data/AAC9872A6BDE0D54426A12A86CC4695A) Organised Sound 28(2), 264–275.
+An overview of the LCT and its use of live coding design patterns has been published in: Brown, Andrew R. (2023) [Live Coding Patterns and a Toolkit for Pure Data.](https://www.cambridge.org/core/journals/organised-sound/article/abs/live-coding-patterns-and-a-toolkit-for-pure-data/AAC9872A6BDE0D54426A12A86CC4695A) Organised Sound 28(2), 264–275.

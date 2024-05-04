@@ -1,6 +1,5 @@
-#N canvas 642 448 234 344 12;
-#X obj 49 34 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
-0 1;
+#N canvas 121 146 233 353 12;
+#X obj 49 34 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 49 91 cycle 60 80 12;
 #X obj 49 210 quant 0 2 3 5 7 8 10;
 #X obj 49 124 rand 60 10;
@@ -26,4 +25,3 @@
 #X connect 8 1 6 1;
 #X connect 9 1 7 1;
 #X connect 10 0 1 0;
-#X connect 10 2 1 5;

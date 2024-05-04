@@ -1,6 +1,5 @@
-#N canvas 648 240 309 329 12;
-#X obj 21 15 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
-0 1;
+#N canvas 179 204 317 344 12;
+#X obj 21 15 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 21 219 cycle 60 100 1;
 #X msg 59 130 100 80;
 #X floatatom 97 186 5 0 1000 1 Delay_offset_in_ms - - 0;
@@ -26,8 +25,6 @@
 #X connect 6 0 1 1;
 #X connect 7 0 1 0;
 #X connect 7 0 10 0;
-#X connect 7 2 1 5;
-#X connect 7 2 10 5;
 #X connect 8 0 13 2;
 #X connect 9 0 14 2;
 #X connect 10 0 15 0;

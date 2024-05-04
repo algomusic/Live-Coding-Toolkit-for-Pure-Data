@@ -38,7 +38,7 @@ A User Guide, Help files, Examples, and test Audio Samples are included.
 
 A series of [tutorial videos](https://www.youtube.com/playlist?list=PLuxj2jXSuTvt2P4TLVdnhHy2hnHNUMTqO) for the Live Coding Toolkit is available. 
 
-The names of some abstractions may conflict with other Pd libraries, such as cyclone or ELSE. To avoid this put all the Live Coding Toolkit files into a folder, e.g. called ltc, inside one included as a Pd Path in preferences. Then access LCT abstractions with a prefix e.g. [ltc/cycle]. This will break the examples, but the prefix can be added to them as needed.
+The names of some abstractions may conflict with other Pd libraries, such as cyclone or ELSE. To avoid this put all the Live Coding Toolkit files into a folder, e.g. called lct, inside one included as a Pd Path in preferences. Then access LCT abstractions with a prefix e.g. [lct/cycle]. This will break the examples, but the prefix can be added to them as needed.
 
 Functions are based on live coding techniques outlined in: Sorensen, Andrew & Brown, Andrew R. (2007) [aa-cell in practice: An approach to musical live coding.](https://eprints.qut.edu.au/39768/1/c39768.pdf) In: Proceedings of the International Computer Music Conference. pp. 292–299. ICMA, Copenhagen.
 
